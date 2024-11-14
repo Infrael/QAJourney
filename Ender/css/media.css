@@ -1,0 +1,45 @@
+/* @Media Notepad */
+@media only screen and (max-width: 790px) {
+    body{
+        min-width: 425px;
+        max-width: 485px;
+        /* margin: auto; */
+    }
+
+    header {        
+        flex-direction: column;
+    }
+
+    header nav{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    #home{
+        flex-direction: column;        
+    }
+}
+
+/* @Media Phone */
+@media only screen and (max-width: 425px) {
+    body{
+        min-width: 325px;
+        max-width: 425px;
+        margin: auto;
+    }
+    
+    header{
+        flex-direction: column;
+    }
+
+    header .logo{
+        justify-content: space-between;
+    }
+
+    header nav{
+        display: flex;
+        justify-content: center;
+        
+        flex-wrap: wrap;
+    }
+}

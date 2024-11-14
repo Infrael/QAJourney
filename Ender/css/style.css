@@ -1,0 +1,91 @@
+/* Body CSS */
+
+body {
+    font-family: "Mulish", sans-serif;
+    margin: 0 auto;
+}
+
+ /* Header CSS */
+
+header {
+    width: 100%;
+    position: sticky;
+    top: 0px;
+
+    display: flex;    
+    flex-wrap: wrap;
+    
+    background-color: white;
+    max-width: 1440px;
+    z-index: 10;
+    margin: 0 auto;
+}
+
+header .logo{
+    
+    
+    display: flex;
+    align-items: center;
+    
+    gap: 5px;
+    margin: 11px;
+    max-height: 45px;
+} 
+
+header .logo .p{
+    font-weight: 700;
+    font-size: 24px;
+}
+
+header nav {
+    flex: 1;
+    width: 100%;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+header nav :first-child{
+    color: #1F1534;
+    font-weight: bold;
+}
+
+header nav a {
+    font-size: 16px; /* Font size for links */
+    text-decoration: none; /* Remove underline from links */
+    color: darkgray; /* Default link color */
+    margin: 11px; /* Add space between links */    
+    transition: color 0.2s; /* Smooth transition for hover */
+}
+
+header nav a:hover {
+    color: gray; /* Hover color for links */
+}
+
+main{
+    margin: auto;
+    max-width: 1440px;
+
+    margin-bottom: 432px;
+}
+
+/* Footer CSS */
+
+footer {
+    left: 0;
+    bottom: 0;
+    
+    background: linear-gradient(#67C3F3, #5A98F2);
+    width: 100%;
+    height: 432px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+

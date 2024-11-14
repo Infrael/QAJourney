@@ -1,0 +1,229 @@
+:root {
+    --brand-green: #00856F;
+    --brand-green-light: #DCE9E2;
+    --brand-green-light02: #F7F9F9;
+    --brand-beige: #FFFAF1;
+    --brand-green-hover: #00453A;
+    --gray-headline: #061800;
+    --gray-headline: #384633;
+    --gray-headline: #3e3e3e;
+    --xl: 1920px;
+    --lg: 1280px;
+    --md: 960px;
+    --sm: 600px;
+    --xs: 320px;
+    --tc: color 0.3s;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, ol, li, a {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "DM Sans", serif;
+    font-weight: 300;
+    font-style: light;
+    
+    display: flex;
+    flex-direction: column;    
+    justify-content: center;
+}
+
+/* Header */
+
+    /* Mindaugas */
+
+/* Main */
+
+/* Main: Home */
+
+    /* Mindaugas */
+
+/* Main: Services */
+.services {
+    background-color: #F7F9F9;
+    padding: 150px 20px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.serviceTitle{
+    width: 100%;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 30px;
+}
+
+.serviceTitle span{
+    
+    color: #00856F;
+    font-weight: bold;
+}
+
+.serviceTitle h2 {
+    padding-bottom: 30px;
+}
+
+.serviceBoxGrid{
+    display: grid;
+    grid-template-columns: repeat(3, 300px); /* Default: 3 columns */
+    gap: 20px;
+    place-items: center;
+    justify-content: center;
+}
+
+.serviceBox {
+    background-color: #FFFFFF;
+    
+    display: flex;
+    flex-direction: column;
+    
+
+    gap: 10px;
+
+    padding: 25px;
+
+    border: 2px solid #DCE9E2;
+    border-radius: 9px;    
+}
+
+/* Main: Services */
+
+    /* Kristina */
+
+/* Main: Virtual Health */
+main .virtual-health {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    margin-top: 60px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+main .virtual-health .virtual-health-box {
+    display: flex;
+    
+    flex-direction: column;
+    align-items: flex-start;
+    
+    padding: 70px;
+    gap: 40px;
+}
+
+main .virtual-health .virtual-health-box p {
+    display: flex;
+    
+    font-size: 18px;
+    opacity: 50%;
+    gap: 5px;
+}
+
+main .virtual-health .contact-img-box{
+    
+    padding: 15px;
+}
+
+main .virtual-health .contact-img-box img {
+    width: 100%;
+    max-height: auto;
+    max-width: 750px;
+    border-radius: 25px;
+}
+
+main .virtual-health .virtual-health-box h1 {
+    font-size: 36px;
+}
+
+main .virtual-health .virtual-health-box button {
+    display: flex;
+    background-color: var(--brand-green);
+    font-size: 20px;
+    color: white;
+    border-radius: 40px;
+    width: 300px;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+main .virtual-health .virtual-health-box button:hover {
+    display: flex;
+    background-color: var(--brand-green-hover);
+    font-size: 20px;
+    color: white;
+    border-radius: 40px;
+    width: 300px;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* Footer */
+footer .footer-text {
+    background-color: var(--brand-green);
+    color: white;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    height: 300px;
+    width: 100%;
+}
+
+footer .footer-text .footer-text-box {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 180px;
+    gap: 20px;
+}
+
+footer .footer-text .footer-text-box h2 {
+    font-size: 50px;
+    font-weight: lighter
+}
+
+footer .footer-icons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* @Media */
+@media (max-width: 1000px) {
+    .serviceBoxGrid {
+        grid-template-columns: repeat(2, 350px); /* 2 columns on medium screens */
+    }
+
+    .virtual-health{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 740px) {
+    .serviceBoxGrid {
+        grid-template-columns: 350px; /* 1 column on small screens */
+    }
+
+        .virtual-health{
+        flex-direction: column;
+    }
+}

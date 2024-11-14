@@ -1,0 +1,100 @@
+#ourService{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    align-items: center;
+    overflow: hidden;
+}
+
+#ourService h2{
+    font-weight: 700;    
+    font-size: 30px;
+    margin-top: 100px;
+}
+
+#ourService svg.background{
+    position: absolute;
+    z-index: -1;
+    
+    width: 100%;
+    top: 750px;
+    left: -500px;
+}
+
+#ourService p.description{
+    margin: 50px 0px;
+    max-width: 1000px;
+    text-align: center;
+    color: #bfb7d1;
+}
+
+#ourService img.polka{
+    position: absolute;
+    height: auto;
+    width: 8%;
+    z-index: -1;
+    right: 180px;
+    top: 1300px;
+}
+
+#ourService .serviceBoxes{
+    display: flex;
+    flex-wrap: wrap;
+    
+    justify-content: center;
+
+    gap: 60px;
+}
+
+#ourService .serviceBoxes .box{
+    border-radius: 20px;
+    background-color: white;
+
+    width: 325px;
+    height: 325px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    padding: 20px 30px 10px 40px;
+    z-index: 1;
+
+    box-shadow: 10px 50px 50px 0px rgba(229,233,246,0.99);
+}
+
+#ourService .serviceBoxes .box h5{
+    font-size: 22px;
+
+}
+
+#ourService .serviceBoxes .box p{
+    color: #848386b7;
+    line-height: 28px;
+    font-size: 20;
+
+}
+
+#ourService a .learnMoreButton {
+    margin-top: 70px;
+
+    z-index: 1;
+        
+    width: 200px;
+    height: 56px;
+
+    border-color: #87b8fd;
+    background: white;
+    border-radius: 55px;
+    
+    font-weight: 600;
+    font-size: 16px;
+    color: #78b0fd;
+    transition: color 0.3s;
+}
+
+#ourService a .learnMoreButton:hover {
+    color: #549afc;
+    border-color: #5598f7;
+}
