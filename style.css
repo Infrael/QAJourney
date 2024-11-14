@@ -1,54 +1,21 @@
-html{
-    min-width: 300px;
-    
-}
-
 body {
-    display: flex;
-    flex-direction: column; /* Arrange children vertically */
-    justify-content: flex-start; /* Align children at the top */
-    align-items: center; /* Horizontally center content */
+    height: 100vh;
+    margin: 0 auto;
+
     background-image: url('Images/HomePageBackground.jpg');
-    background-size: cover; /* Makes the image cover the entire page */
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
-    height: 100vh; /* Ensures the body takes full height of the viewport */
-    margin: 0; /* Removes default margin */
 }
 
 header{
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* Center content inside main */
-    align-items: center; /* Vertically center content inside main */
+    min-width: 200px;
+    width: 100%;
+    text-align: center;
     font-size: 40px;
 }
 
-main {
-    display: flex;
-    justify-content: center; /* Center content inside main */
-    align-items: center; /* Vertically center content inside main */
-    width: 100%; /* Ensure main takes full width */
-    position: absolute;
-    bottom: 10%;
-    
-}
-
-footer{
-    
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-end;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    
-    color: white;
-}
-
-
 .highlight {
-    color: black;
     text-shadow: 
         1px 1px 0px white,
        -1px 1px 0px white,
@@ -56,38 +23,87 @@ footer{
        -1px -1px 0px white;
 }
 
-.hamburger:before {
-    content: '';
-    position: absolute;
-    width: 50px;
-    height: 5px;
-    background-color: black;
-    top: 10px;
-}
- 
-.hamburger:after {
-    content: '';
-    position: absolute;
-    width: 50px;
-    height: 5px;
-    background-color: black;
-    top: 20px;
-}
- 
+main {
+    display: flex;
+    justify-content: center;
 
-nav a {
-    color: rgb(0, 0, 0); /* Normal color */
+    margin: 50px;
+}
+
+
+main .htmlCss, .ender, .javaScript{
+    flex: 1;
+
+    min-width: 200px;
+    min-height: 1000px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;    
+
+    color: #052249cb;
+    font-size: 30px;
+    font-weight: 700;
+
+    background-color: rgba(11, 189, 212, 0.192);
+    border-radius: 25px;
+}
+
+main .ender{
+    justify-content: center;
+    background: none;
+}
+
+main a {
+    color: #052249cb;
+    transition: 0.3s;  
+}
+
+main a:hover {
+    color: #08bd59cb;
+    text-shadow: 1px 1px 0px #095720e1,
+                -1px 1px 0px #095720e1,
+                1px -1px 0px #095720e1,
+                -1px -1px 0px #095720e1;
+}
+
+main button{
+    height: 355px;
+    width: 350px;
+
+    border-radius: 175px;
+    font-weight: 700;
+    font-size: 22px;
     
+    background-image: url('Images/Inspiration.jpg');
+    background-size: cover;
+    background-position: center;
+
+    color: rgb(30, 156, 240);
+    font-weight: 700;
+    font-size: 42px;
+
+    transition: 0.5s;
 }
 
-nav a:hover {
-    color: rgba(22, 177, 204, 0.795); /* Change color on hover */
+main button:hover{
+    box-shadow: 0px 0px 35px 35px rgba(112,226,255,0.48);
+    border-radius: 200px;
+
+    height: 360px;
+    width: 365px;
+
 }
 
-.returnHome{
-    color:indigo;
-}
-
-.completedAssignment{
-    color: rgb(0, 255, 0);
+footer{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    
+    color: white;
 }
