@@ -34,8 +34,10 @@ main {
 main .htmlCss, .ender, .javaScript{
     flex: 1;
 
-    min-width: 200px;
+    min-width: 300px;
+    max-width: 500px;
     min-height: 1000px;
+
 
     display: flex;
     flex-direction: column;
