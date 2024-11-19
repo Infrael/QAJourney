@@ -16,21 +16,21 @@ header {
     flex-wrap: wrap;
     
     background-color: white;
-    max-width: 1440px;
+    max-width: 1200px;
     z-index: 10;
     margin: 0 auto;
+
+    .logo{
+        width: auto;
+        display: flex;
+        align-items: center;
+        
+        gap: 5px;
+        margin: 11px;
+        max-height: 45px;
+    }
 }
 
-header .logo{
-    
-    
-    display: flex;
-    align-items: center;
-    
-    gap: 5px;
-    margin: 11px;
-    max-height: 45px;
-} 
 
 header .logo .p{
     font-weight: 700;
@@ -65,7 +65,7 @@ header nav a:hover {
 
 main{
     margin: auto;
-    max-width: 1440px;
+    max-width: 1200px;
 
     margin-bottom: 432px;
 }

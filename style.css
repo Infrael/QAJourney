@@ -42,7 +42,7 @@ main .htmlCss, .ender, .javaScript{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;    
+    
 
     color: #052249cb;
     font-size: 30px;

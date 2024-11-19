@@ -18,6 +18,25 @@
     #home{
         flex-direction: column;        
     }
+
+    #testimonials .infoBox .customerMessage{
+        padding: 0;
+        
+    }
+
+    #testimonials .infoBox .customerMessage .message{
+        flex: 1 1 700px;
+        padding: 0;
+        
+    }
+
+    #testimonials .infoBox .customerMessage .customerBox .customerIcon{
+        display: none;
+    }
+
+    #testimonials .infoBox .customerMessage .customerBox .customerInfo p{
+        display: none;
+    }
 }
 
 /* @Media Phone */
