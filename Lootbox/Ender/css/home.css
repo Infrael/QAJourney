@@ -8,48 +8,64 @@
 }
 
 #home .homeIntro {
-    flex: 0 1 380px;
+    flex: 1;
 
     display: flex;
     align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    
 }
 
 #home .homeIntro .homeIntroContent {
     display: flex;
-    flex-direction: column;    
-    align-items: flex-start;
-    align-content: center;
+    flex-direction: column;
+    justify-content: space-around;
 
-    gap: 25px;
+    
+    height: 90%;
+
+    
+    
 }
 
 #home .homeIntro .homeIntroContent h1 {
     flex: 1;
+
     font-size: 48px;
     font-weight: 700;
-    line-height: 56px;
+
+    margin: 0;
 }
 
 #home .homeIntro .homeIntroContent p {
     flex: 1;
 
     color: #7D7987;
+    font-size: 21px;
+    font-weight: 300;
+    padding-right: 80px;
+    line-height: 32px;
+    
+    margin: 0;
 }
 
 #home .homeIntro .homeIntroContent button{    
+    flex: 0 0;
     width: 200px;
-    height: 56px;
+    min-height: 56px;
     
     background-color: #458FF6;
 
     font-weight: 700;
-    font-size: 14px;
-    
+    font-size: 18px;
+        
     text-align: center;
     text-decoration: none;
-    color: aliceblue;
+    color: white;
 
     border-radius: 100px;
+    border: transparent;
 }
 
 #home .homeIntro img {
@@ -60,22 +76,16 @@
     z-index: -1;
     top: 5%;
     left: 0px;
-
 }
 
 #home .homeImage {
-    flex: 1 1;
-    
+    flex: 1;
+     
     display: flex;
     justify-content: center;
 }
 
 #home .homeImage img {
-    
-    max-width: 80%;
     min-width: 380px;
-    
-    
-    height: auto;
-    
+    width: 100%;
 }

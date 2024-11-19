@@ -3,6 +3,7 @@
 body {
     font-family: "Mulish", sans-serif;
     margin: 0 auto;
+
 }
 
  /* Header CSS */
@@ -28,39 +29,41 @@ header {
         gap: 5px;
         margin: 11px;
         max-height: 45px;
+
+        p{
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 30px;            
+        }
     }
-}
 
+    nav {
+        flex: 1;
+        width: 100%;
+    
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 25px;
 
-header .logo .p{
-    font-weight: 700;
-    font-size: 24px;
-}
+        :first-child{
+            color: #1F1534;
+            font-weight: bold;
+        }
 
-header nav {
-    flex: 1;
-    width: 100%;
+        a {
+            font-size: 18px; /* Font size for links */
+            line-height: 23px;
+            text-decoration: none; /* Remove underline from links */
+            color: darkgray; /* Default link color */
+            margin: 11px; /* Add space between links */    
+            transition: color 0.2s; /* Smooth transition for hover */
 
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
-
-header nav :first-child{
-    color: #1F1534;
-    font-weight: bold;
-}
-
-header nav a {
-    font-size: 16px; /* Font size for links */
-    text-decoration: none; /* Remove underline from links */
-    color: darkgray; /* Default link color */
-    margin: 11px; /* Add space between links */    
-    transition: color 0.2s; /* Smooth transition for hover */
-}
-
-header nav a:hover {
-    color: gray; /* Hover color for links */
+            :hover {
+                color: gray; /* Hover color for links */
+            }
+        }
+    }
 }
 
 main{
