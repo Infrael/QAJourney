@@ -106,7 +106,7 @@ if (document.querySelector("head title").innerHTML === "Console Work"){
 
         });
 
-        console.log(`7. Total of 7 or more lettered Countries in Class "Countries": ${totalSum}`)
+        console.log(`7. 7 or more lettered Countries in Class "Countries": ${totalSum}`)
     }
 
     // 8. Paskaičiuoti ko daugiau pliusų ar minusų klasėje “pliusai-minusai”. Rezultatą išvesti į konsolę;
@@ -155,3 +155,10 @@ if (document.querySelector("head title").innerHTML === "Console Work"){
         console.log(`10. Total Red State's in Class "Red-States": ${totalSum}`)
     }
 }
+
+
+const miestai = ['Vilnius', 'Kaunas', 'Klaipėda', 'Šiauliai', 'Panevėžys', 'Alytus', 'Marijampolė', 'Mažeikiai', 'Jonava', 'Utena', 'Kėdainiai', 'Telšiai', 'Visaginas', 'Tauragė', 'Ukmergė', 'Plungė', 'Kretinga', 'Šilutė', 'Radviliškis', 'Palanga', 'Druskininkai', 'Rokiškis', 'Šakiai', 'Biržai', 'Elektrėnai', 'Garliava', 'Jurbarkas', 'Švenčionys', 'Lentvaris', 'Anykščiai', 'Prienai', 'Jonava', 'Kaišiadorys', 'Širvintos', 'Kupiškis', 'Zarasai', 'Kelmė', 'Šalčininkai', 'Švenčionėliai', 'Varėna', 'Nemenčinė', 'Trakai', 'Šilalė', 'Kazlų Rūda', 'Šeduva', 'Širvintos', 'Raseiniai', 'Švenčionėliai', 'Šilalė', 'Kazlų Rūda', 'Šeduva', 'Širvintos', 'Raseiniai', 'Švenčionėliai', 'Šilalė', 'Kazlų Rūda', 'Šeduva', 'Širvintos', 'Raseiniai', 'Švenčionėliai', 'Šilalė', 'Kazlų Rūda', 'Šeduva', 'Širvintos', 'Raseiniai', 'Švenčionėliai', 'Šilalė', 'Kazlų Rūda', 'Šeduva'];
+ 
+miestai.forEach( miestas => {
+    console.log(miestas.slice(-1))
+})
