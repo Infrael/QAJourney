@@ -66,7 +66,7 @@ if (document.querySelector("head title").innerHTML === "Console Work"){
         allAssignments[4].querySelectorAll("span").forEach(span =>{
             let fruit = span.innerText;
 
-            for (const letter of fruit){
+            for (letter of fruit){
                 if (letter === "A" || letter === "a"){
                     span.style.cssText="font-weight: 700;"
                     totalSum += 1;
@@ -84,7 +84,6 @@ if (document.querySelector("head title").innerHTML === "Console Work"){
             let city = span.innerText;
 
             if (city.slice(0, 1) === "K" || city.slice(-1) === "i"){
-                span.style.cssText="font-weight: 700;"
                 totalSum += 1;
             }
 
@@ -160,5 +159,5 @@ if (document.querySelector("head title").innerHTML === "Console Work"){
 const miestai = ['Vilnius', 'Kaunas', 'Klaipėda', 'Šiauliai', 'Panevėžys', 'Alytus', 'Marijampolė', 'Mažeikiai', 'Jonava', 'Utena', 'Kėdainiai', 'Telšiai', 'Visaginas', 'Tauragė', 'Ukmergė', 'Plungė', 'Kretinga', 'Šilutė', 'Radviliškis', 'Palanga', 'Druskininkai', 'Rokiškis', 'Šakiai', 'Biržai', 'Elektrėnai', 'Garliava', 'Jurbarkas', 'Švenčionys', 'Lentvaris', 'Anykščiai', 'Prienai', 'Jonava', 'Kaišiadorys', 'Širvintos', 'Kupiškis', 'Zarasai', 'Kelmė', 'Šalčininkai', 'Švenčionėliai', 'Varėna', 'Nemenčinė', 'Trakai', 'Šilalė', 'Kazlų Rūda', 'Šeduva', 'Širvintos', 'Raseiniai', 'Švenčionėliai', 'Šilalė', 'Kazlų Rūda', 'Šeduva', 'Širvintos', 'Raseiniai', 'Švenčionėliai', 'Šilalė', 'Kazlų Rūda', 'Šeduva', 'Širvintos', 'Raseiniai', 'Švenčionėliai', 'Šilalė', 'Kazlų Rūda', 'Šeduva', 'Širvintos', 'Raseiniai', 'Švenčionėliai', 'Šilalė', 'Kazlų Rūda', 'Šeduva'];
  
 miestai.forEach( miestas => {
-    console.log(miestas.slice(-1))
+    console.log(miestas.slice(0))
 })

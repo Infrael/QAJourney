@@ -1,0 +1,110 @@
+#articles{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin-top: 250px;
+
+    h2{
+        font-weight: 700;
+        font-size: 36px;
+        margin: 0;
+    }
+
+    .decoLine{
+        margin-bottom: 50px;
+    }
+
+    .additionalArticles{
+        display: flex;
+        border-radius: 25px;
+        gap: 30px;
+        height: 520px;
+
+        position: relative;
+        
+        div{
+            display: flex;
+            flex-direction: column;
+
+            box-shadow: 10px 40px 50px 0px #E5E9F666;
+            width: 350px;     
+            
+            img{
+                flex: 1;
+
+                width: 350px;
+                border-radius: 25px 25px 0 0;
+            }
+
+            div{                
+                flex: 1;
+
+                display: flex;
+                flex-direction: column;
+                
+                background-color: white;
+                border-radius: 25px;
+
+                h4, p, a{
+                    margin: 20px 30px 0 20px;
+                    flex: 1;
+                }
+
+                h4{
+                    font-weight: 700;
+                    font-size: 21px;
+                    line-height: 32px;
+                }
+
+                p{
+                    color: #7D7987;
+                    font-weight: 300;
+                    font-size: 16px;
+                    line-height: 28px;
+                }
+
+                a{
+                    color: #4089ED;
+                    font-weight: 600;
+                    font-size: 17px;
+                    line-height: 28px;
+                }
+            }
+        }
+
+        .background{
+            position: absolute;
+            z-index: -1;
+
+            right: -240px;
+            top: -50px;
+        }
+
+        .articleDot{
+            position: absolute;
+            z-index: -1;
+
+            left: -50px;
+            top: -50px;
+        }
+    }
+    
+    button{
+        z-index: 1;
+        margin-top: 50px;
+            
+        width: 200px;
+        height: 56px;
+
+        border-color: #458FF6;
+        background: white;
+        border-radius: 55px;
+        
+        font-weight: 600;
+        font-size: 16px;
+        color: #78b0fd;
+        transition: color 0.3s;
+    }
+}
