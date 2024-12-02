@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hug Me!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        .hug {
+            margin-top: 30px;
+            display: none;
+            font-size: 30px;
+            color: #ff66b2;
+            animation: pulse 1s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); opacity: 1; }
+            50% { transform: scale(1.2); opacity: 0.8; }
+            100% { transform: scale(1); opacity: 1; }
+        }
+
+        /* Triangle Button */
+        .triangle-button {
+            margin-top: 50px;
+            position: relative;
+
+            width: 0;
+            height: 0;
+
+            padding: 0;
+
+            border-left: 60px solid white;
+            border-right: 60px solid white;
+            border-bottom: 0px solid white;
+            border-top: 60px solid #ff66b2;
+            
+            transition: transform 0.3s ease, background-color 0.3s ease;
+            
+        }
+
+        .triangle-button:before, .triangle-button:after {
+            content: '';
+            position: absolute;
+            width: 70px;
+            height: 70px;
+            background-color: #ff66b2;
+            border-radius: 50%;
+            top: -112px;
+        }
+
+        .triangle-button:before {
+            left: -5px;
+        }
+
+        .triangle-button:after {
+            right: -5px;
+        }
+
+        .triangle-button:hover {
+            transform: scale(1.1);
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hey, Mr. Developer...</h1>
+    <button onclick="sendHug()" class="triangle-button"></button>
+    <div id="hug" class="hug">🤗 Sending you a fiery, irresistible virtual hug... 😘💋</div>
+
+    <script>
+        function sendHug() {
+            const hug = document.getElementById('hug');
+            hug.style.display = 'block';
+            setTimeout(() => {
+                hug.style.display = 'none';
+            }, 3000);
+        }
+    </script>
+</body>
+</html>

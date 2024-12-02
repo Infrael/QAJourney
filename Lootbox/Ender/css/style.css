@@ -85,13 +85,102 @@ footer {
     background: linear-gradient(#67C3F3, #5A98F2);
     width: 100%;
     height: 432px;
-    
+
     display: flex;
+    
     justify-content: center;
     align-items: center;
+
+    position: relative;
+
+    .linkingParagraph{
+        position: relative;
+        width: 80%;
+        height: 50%;
+
+        display: grid;
+        grid-template: 1fr / 3fr 1fr 1fr 1fr;
+
+        :first-child{
+
+            max-width: 450px;
+            gap: 20px;
+
+            p{
+                flex:1;
+            }
+            
+            :last-child{
+                align-items: flex-end;
+            }
+        }
+
+
+        section{
+            display: flex;
+            flex-direction: column;
+            max-width: 100ps;
+
+
+            gap: 10px;
+            
+            span{
+                display: flex;
+                align-items: center;
+
+                font-weight: 700;
+                font-size: 24px;
+
+                line-height: 60px;
+
+                color: white;
+
+                gap: 10px;
+
+            }
+
+            h4{
+                color: white;
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 60px;
+            }
+
+            p{
+                font-weight: 200;
+
+                color: white;
+                font-size: 18px;
+                line-height: 28px;
+            }
+
+
+
+            p, h4{
+                margin: 0;
+            }
+        }
+    }
+
+    position: relative;
+    .botBubl{
+        position: absolute;
+        
+        left: 0px;
+        bottom: 0px;
+    }
+
+    .topBubl{
+        position: absolute;
+        right: 70px;
+        top: -70px;
+
+        z-index: -1;        
+    }
+
+    .returnHome{
+        position: absolute;
+        left: 0.5%;
+        bottom: 22%;
+    }
 }
-
-
-
-
-
