@@ -29,7 +29,9 @@
             flex-direction: column;
 
             box-shadow: 10px 40px 50px 0px #E5E9F666;
-            width: 350px;     
+            width: 350px;
+
+            
             
             img{
                 flex: 1;
@@ -78,8 +80,10 @@
             position: absolute;
             z-index: -1;
 
-            right: -240px;
-            top: -50px;
+            height: auto;
+
+            right: -600px;
+            top: -150px;
         }
 
         .articleDot{

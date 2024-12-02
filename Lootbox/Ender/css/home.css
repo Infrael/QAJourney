@@ -1,91 +1,87 @@
 #home {
     display: flex;
     flex-wrap: wrap;
+    
     position: relative;
     padding: 0px 15px;
     margin-top: 50px;
+
+    .deDots {
+        position: absolute;
+        max-width: 75px;
+        height: auto;
     
-}
+        z-index: -1;
+        top: -35px;
+        left: -140px;
+    }
 
-#home .homeIntro {
-    flex: 1;
-
-    display: flex;
-    align-items: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    .homeIntro {
+        flex: 1;
     
-}
-
-#home .homeIntro .homeIntroContent {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-
-    
-    height: 90%;
-
-    
-    
-}
-
-#home .homeIntro .homeIntroContent h1 {
-    flex: 1;
-
-    font-size: 48px;
-    font-weight: 700;
-
-    margin: 0;
-}
-
-#home .homeIntro .homeIntroContent p {
-    flex: 1;
-
-    color: #7D7987;
-    font-size: 21px;
-    font-weight: 300;
-    padding-right: 80px;
-    line-height: 32px;
-    
-    margin: 0;
-}
-
-#home .homeIntro .homeIntroContent button{    
-    flex: 0 0;
-    width: 200px;
-    min-height: 56px;
-    
-    background-color: #458FF6;
-
-    font-weight: 700;
-    font-size: 18px;
+        display: flex;
+        align-items: center;
+        margin-top: 80px;
+        margin-bottom: 80px;
         
-    text-align: center;
-    text-decoration: none;
-    color: white;
+        .homeIntroContent {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        
+            
+            height: 90%;
+        
+            h1 {
+                flex: 1;
+            
+                font-size: 48px;
+                font-weight: 700;
+            
+                margin: 0;
+            }
 
-    border-radius: 100px;
-    border: transparent;
-}
+            p {
+                flex: 1;
+            
+                color: #7D7987;
+                font-size: 21px;
+                font-weight: 300;
+                padding-right: 80px;
+                line-height: 32px;
+                
+                margin: 0;
+            }
 
-#home .homeIntro img {
-    position: absolute;
-    max-width: 75px;
-    height: auto;
+            button{    
+                flex: 0 0;
+                width: 200px;
+                min-height: 56px;
+                
+                background-color: #458FF6;
+            
+                font-weight: 700;
+                font-size: 18px;
+                    
+                text-align: center;
+                text-decoration: none;
+                color: white;
+            
+                border-radius: 100px;
+                border: transparent;
+            }
+        }
+    }
+        
+    .homeImage {
+        flex: 1;
+         
+        display: flex;
+        justify-content: center;
 
-    z-index: -1;
-    top: -35px;
-    left: -150px;
-}
-
-#home .homeImage {
-    flex: 1;
-     
-    display: flex;
-    justify-content: center;
-}
-
-#home .homeImage img {
-    min-width: 380px;
-    width: 100%;
+        img {
+            min-width: 380px;
+            width: 100%;
+        }
+    }
 }

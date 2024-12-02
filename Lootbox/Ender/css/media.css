@@ -1,40 +1,43 @@
 /* @Media Notepad */
-@media only screen and (max-width: 790px) {
-    body{
-        min-width: 425px;
-        max-width: 485px;
-    }
-
+@media only screen and (max-width: 768px) {
     header {        
         flex-direction: column;
+        align-items: center;
+        
+        margin-bottom: px;
+
     }
 
-    header nav{
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-
-    #home{
-        flex-direction: column;        
+    #ourService{
+        .appPicture{
+            max-width: 600px;
+        }
     }
 
     #testimonials .infoBox .customerMessage{
         padding: 0;
-        
+
+        .message{
+            flex: 1 1 700px;
+            padding: 0;
+            
+        }
+
+        .customerBox .customerIcon{
+            display: none;
+        }
+
+        .customerBox .customerInfo p{
+            display: none;
+        }
     }
 
-    #testimonials .infoBox .customerMessage .message{
-        flex: 1 1 700px;
-        padding: 0;
-        
-    }
-
-    #testimonials .infoBox .customerMessage .customerBox .customerIcon{
-        display: none;
-    }
-
-    #testimonials .infoBox .customerMessage .customerBox .customerInfo p{
-        display: none;
+    #articles{
+        overflow: hidden;
+        .additionalArticles{
+            flex-wrap: wrap;
+            
+        }
     }
 }
 
