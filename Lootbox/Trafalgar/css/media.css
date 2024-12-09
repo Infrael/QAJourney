@@ -1,0 +1,40 @@
+@media only screen and (max-width: 1440px) {
+    body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .content{
+            main{
+                display: flex;
+                flex-direction: column;
+                
+                #home{
+                    .deDots{
+                        top: -35px;
+                        left: -110px;
+                    }
+                }
+
+                #articles{
+                    .additionalArticles{
+                        flex-wrap: wrap;    
+                    }                    
+                }
+            }
+        }
+
+        #aboutUs{
+            .linkingParagraph{
+                .botBubl{
+                    left: -150px;
+                    bottom: -105px;
+                }
+
+                .topBubl{
+                    right: 0;
+                }
+            }
+        }
+    }
+}

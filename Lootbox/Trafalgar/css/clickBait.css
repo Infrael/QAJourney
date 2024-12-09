@@ -18,6 +18,7 @@
 
     .additionalArticles{
         display: flex;
+        
         border-radius: 25px;
         gap: 30px;
         height: 520px;

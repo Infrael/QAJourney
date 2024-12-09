@@ -6,111 +6,108 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
-}
 
-header{
-    min-width: 200px;
-    width: 100%;
-    text-align: center;
-    font-size: 40px;
+    header{
+        min-width: 200px;
+        width: 100%;
+        text-align: center;
+        font-size: 40px;
+    
+        .highlight {
+            text-shadow: 
+                1px 1px 0px white,
+               -1px 1px 0px white,
+                1px -1px 0px white,
+               -1px -1px 0px white;
+        }
+    }
+        
+    main {
+        display: flex;
+        justify-content: center;
+    
+        margin: 50px;
 
-    a{
-        color: black;
-        text-decoration: none;
+
+
+        .htmlCss, .ender, .javaScript{
+            flex: 1;
+        
+            min-width: 300px;
+            max-width: 500px;
+            min-height: 1000px;
+        
+        
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+        
+            color: #052249cb;
+            font-size: 30px;
+            font-weight: 700;
+        
+            background-color: rgba(11, 189, 212, 0.192);
+            border-radius: 25px;
+        }
+        
+        .ender{
+            justify-content: center;
+            background: none;
+        }
+        
+        a {
+            color: #052249cb;
+            transition: 0.3s;  
+        }
+        
+        a:hover {
+            color: #08bd59cb;
+            text-shadow: 1px 1px 0px #095720e1,
+                        -1px 1px 0px #095720e1,
+                        1px -1px 0px #095720e1,
+                        -1px -1px 0px #095720e1;
+        }
+        
+        button{
+            height: 355px;
+            width: 350px;
+        
+            border-radius: 175px;
+            font-weight: 700;
+            font-size: 22px;
+            
+            background-image: url('Images/Inspiration.jpg');
+            background-size: cover;
+            background-position: center;
+        
+            color: rgb(30, 156, 240);
+            font-weight: 700;
+            font-size: 42px;
+        
+            transition: 0.5s;
+        }
+        
+        button:hover{
+            box-shadow: 0px 0px 35px 35px rgba(112,226,255,0.48);
+            border-radius: 200px;
+        
+            height: 360px;
+            width: 365px;
+        
+        }
+    }
+    
+    footer{
+        
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        
+        color: white;
     }
 }
 
-.highlight {
-    text-shadow: 
-        1px 1px 0px white,
-       -1px 1px 0px white,
-        1px -1px 0px white,
-       -1px -1px 0px white;
-}
-
-main {
-    display: flex;
-    justify-content: center;
-
-    margin: 50px;
-}
-
-
-main .htmlCss, .ender, .javaScript{
-    flex: 1;
-
-    min-width: 300px;
-    max-width: 500px;
-    min-height: 1000px;
-
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
-
-    color: #052249cb;
-    font-size: 30px;
-    font-weight: 700;
-
-    background-color: rgba(11, 189, 212, 0.192);
-    border-radius: 25px;
-}
-
-main .ender{
-    justify-content: center;
-    background: none;
-}
-
-main a {
-    color: #052249cb;
-    transition: 0.3s;  
-}
-
-main a:hover {
-    color: #08bd59cb;
-    text-shadow: 1px 1px 0px #095720e1,
-                -1px 1px 0px #095720e1,
-                1px -1px 0px #095720e1,
-                -1px -1px 0px #095720e1;
-}
-
-main button{
-    height: 355px;
-    width: 350px;
-
-    border-radius: 175px;
-    font-weight: 700;
-    font-size: 22px;
-    
-    background-image: url('Images/Inspiration.jpg');
-    background-size: cover;
-    background-position: center;
-
-    color: rgb(30, 156, 240);
-    font-weight: 700;
-    font-size: 42px;
-
-    transition: 0.5s;
-}
-
-main button:hover{
-    box-shadow: 0px 0px 35px 35px rgba(112,226,255,0.48);
-    border-radius: 200px;
-
-    height: 360px;
-    width: 365px;
-
-}
-
-footer{
-    
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    
-    color: white;
-}

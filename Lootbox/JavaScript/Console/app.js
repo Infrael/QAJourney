@@ -218,10 +218,7 @@ if (document.querySelector("head title").innerHTML === "Console Work"){
         }
     }
 
-
-    let myShroomsket = new Basket();
-
-    myShroomsket = Mushroom.goShrooming(myShroomsket);
+    myShroomsket = Mushroom.goShrooming(new Basket());
     myShroomsket.showAllItems();
     myShroomsket.addItem("Mushroom", (new Mushroom(true, true, 50)).size)
 }

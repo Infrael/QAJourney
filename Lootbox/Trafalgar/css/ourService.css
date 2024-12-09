@@ -1,0 +1,117 @@
+#ourService{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    position: relative;
+
+    align-items: center;
+
+    h2{
+        font-weight: 700;    
+        font-size: 36px;
+        line-height: 56px;
+    
+        margin-top: 150px;
+    }
+
+    svg.background{
+        position: absolute;
+        z-index: -1;
+        
+        width: 100%;
+        top: 150px;
+        left: -320px;
+    }
+
+    p.description{
+        margin: 50px 0px;
+        max-width: 1000px;
+    
+        text-align: center;
+    
+        color: #7D7987;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 30px;
+    
+    }
+
+    img.polka{
+        position: absolute;
+        height: auto;
+        z-index: -1;
+        right: -10px;
+        top: 650px;
+    
+        width: 10%;
+    }
+
+    .serviceBoxes{
+        display: flex;
+        flex-wrap: wrap;
+        
+        justify-content: center;
+    
+        gap: 30px;
+    
+        .box{
+            border-radius: 20px;
+            background-color: white;
+        
+            width: 280px;
+            height: 280px;
+        
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            
+            padding: 10px 30px 10px 40px;
+            z-index: 1;
+        
+            box-shadow: 10px 50px 50px 0px #E5E9F666;
+        
+            svg{
+                flex: 1;
+                height: 100%;
+            }
+    
+            h5{
+                font-size: 22px;
+                margin: 0;
+            
+            }
+    
+            p{
+                flex: 1;
+                color: #848386b7;
+                line-height: 28px;
+                font-size: 16px;
+            
+            }
+        }
+    }
+
+    a .ourServiceButton {
+        margin-top: 70px;
+    
+        z-index: 1;
+            
+        width: 200px;
+        height: 56px;
+    
+        border-color: #458FF6;
+        background: transparent;
+        border-radius: 55px;
+        
+        font-weight: 600;
+        font-size: 16px;
+        color: #78b0fd;
+        transition: color 0.3s;
+
+        :hover {
+            color: rgb(30, 108, 226);
+            border-color: #5598f7;
+        }
+    }
+}

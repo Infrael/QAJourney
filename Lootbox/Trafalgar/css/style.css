@@ -9,6 +9,7 @@ body {
     align-items: center;
 
     gap: 220px;
+    margin: 0;
 
     .content{
         display: flex;
