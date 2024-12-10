@@ -136,6 +136,7 @@ html{
 
             margin-top: 25px;
 
+            position: relative;
             .signature{
                 display: flex;
                 align-items: center;
@@ -156,21 +157,25 @@ html{
                     border-bottom: 1px solid black;
                 }
             }
-
-            position: relative;
+            
             button{
                 position: absolute;    
                 right: 0;
-                bottom: 0;
+                bottom: -100px;
             }
-
             
             .returnHome{
                 position: absolute;
-                right: 0;
+                left: 0;
                 bottom: -100px;
             }
         }
+    }
+}
+
+@media print {
+    .no-print {
+        display: none;
     }
 }
 
