@@ -3,21 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="app.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
     <title>Shopping Cart</title>
 </head>
 <body>
-    <h1>K2 Sąskaitos išrašymas</h1>
+    <header>
+        <h2>PVM SĄSKAITA FAKTŪRA</h1>
+        <p>Serija <span class="invoiceSeries">AA</span> Nr. <span class="invoiceNumber">00000000</span></p>
+        <div class="termBox">
+            <div class="dates">
+                <p>Data: <span class="date">0000-00-00</span></p>
+                <p>Apmokėti iki: <span class="due_date">0000-00-00</span></p>
+            </div>
+        </div>
+    </header>
 
-    <p>Užduotis.</p>
-    <p>Suformuoti PVM Sąskaitą Faktūrą iš duomenų gautų iš API <a href="https://in3.dev/inv/">https://in3.dev/inv/</a></p>
-    <p>
-    Paaiškinimai:<br>
-    Naudojant HTML ir CSS padaryti realiai atrodančią (naudojant minimalų spalvų kiekį) sąskaitą faktūrą, kurią būtų galim atspausdinti.<br>
-    Sąskaitoje turi matytis užrašas PVM SĄSKAITA FAKTŪRA, sąskaitos numeris, pardavėjo ir pirkėjo duomenys, sąskaitos data ir mokėjimo termino data.<br>
-    Išvardintos prekės, jų pavadinimai, jeigu yra nurodytos nuolaidos (fiksuotos nuolaidos dydis su minuso ženklu, procentinės- procentai ir kainos dalis pagal procentus su minuso ženklu), transportavimo išlaidos.<br>
-    Paskaičiuota tarpinė kaina, įvertinant kiekius, nuolaidas ir transportavimo išlaidas, paskaičiuotas pvm 21% ir galutinė kaina su PVM
-    </p>
-    <p class="returnHome"><a href="../../index.html">Return Home</a></p>
+    <main>
+        <div class="seller">
+            <p>PARDAVĖJAS</p>
+            <h3 class="sellerName">Imonės Pavadinimas</h2>
+            <p>
+                Juridinio asmens kodas: <span class="sellerCode"></span><br>
+                PVM mokėtojo kodas: <span class="sellerVat"></span><br>
+                <span class="sellerAddress"></span><br>
+            </p>
+            <p>
+                Tel. <span class="sellerPhone"></span><br>
+                El. paštas: <a href= "mailto:" class="sellerEmail"></a><br>
+            </p>
+        </div>
+        <div class="buyer">
+            <p>PIRKĖJAS</p>
+            <h3 class="buyerName">Imonės Pavadinimas</h2>
+            <p>
+                Juridinio asmens kodas: <span class="buyerCode"></span><br>
+                PVM mokėtojo kodas: <span class="buyerVat"></span><br>
+                <span class="buyerAddress"></span><br>
+            </p>
+            <p>
+                Tel. <span class="buyerPhone"></span><br>
+                El. paštas: <a href= "mailto:" class="buyerEmail"></a><br>
+            </p>
+        </div>
+    </main>
+    <table class="itemTable">
+        <thead>
+            <tr>
+                <th>Prekių, paslaugų pavadinimas</th>
+                <th>Kiekis</th>
+                <th>Kaina (Eur)</th>
+                <th>Suma (Eur)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="listEnd"></tr>
+            <tr>
+                <td class="noBorder"></td>
+                <td class="noBorder"></td>
+                <td>Siuntimo kaina: </td>
+                <td class="shipmentCost"></td>
+            </tr>
+            <tr>
+                <td class="noBorder"></td>
+                <td class="noBorder"></td>
+                <td>Suma be PVM:</td>
+                <td class="noTaxSum"></td>
+            </tr>
+            <tr>
+                <td class="noBorder"></td>
+                <td class="noBorder"></td>
+                <td>PVM 21%:</td>
+                <td class="taxAmount"></td>
+            </tr>
+            <tr>
+                <td class="noBorder">Bendra suma žodžiais:</td>
+                <td class="noBorder sumInWords"></td>
+                <td>Bendra suma:</td>
+                <td class="totalSum"></td>
+            </tr>
+        </tbody>
+    </table>
+    <footer>
+        <div class="signature">
+            <p>Sąsakitą išrašė</p>
+            <span></span>
+        </div>
+        <div class="signature">
+            <p>Sąsakitą gavo</p>
+            <span></span>
+        </div>
+        <button onclick="window.print()">Print Invoice</button>
+        <p class="returnHome"><a href="../../index.html">Return Home</a></p>
+    </footer>
 </body>
 </html>

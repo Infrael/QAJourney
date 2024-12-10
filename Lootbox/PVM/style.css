@@ -1,0 +1,176 @@
+html{
+    margin: 0;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    body{
+        max-width: 1000px;
+        height: 100%;
+        width: 100%;
+
+        margin: 25px;
+    
+        header{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            margin-bottom: 50px;
+            
+            h2{
+                margin: 0;
+                font-size: 28px;
+                font-weight: bold;
+            }
+
+            p{
+                font-size: 18px;
+                margin: 5px;
+
+                height: 100%;
+                
+                .invoiceSeries, .invoiceNumber{
+                    font-weight: bold;
+                }
+            }
+
+            .termBox{
+                display: flex;
+                flex-direction: column;
+
+                width: 100%;
+
+                .dates{
+                    text-align: end;
+                    font-size: 18px;
+
+                    .date, .due_date{
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+
+        main{
+            display: flex;
+            justify-content: space-between;
+
+            margin-bottom: 25px;
+
+            h3{
+                font-weight: bold;
+                font-size: 24px;
+
+                margin: 0;
+            }
+
+            p{
+                line-height: 20px;
+            }
+
+            .buyer{
+                text-align: end;
+            }
+        }
+
+        table {
+            width: 100%;
+            text-align: right;
+
+            border-collapse: collapse;
+
+            thead{
+                font-weight: bold;
+
+                border-bottom: 1px solid #949494a4;
+    
+                th:first-child {
+                    text-align: left;
+                }
+            }
+
+            tbody {
+                .listEnd{
+                    height: 10px;
+                }
+
+                td {                
+                    padding: 7px;
+                    border-bottom: 1px solid #949494a4;
+                }
+
+                td:first-child {
+                    text-align: left;
+                    width: 75%;
+                }
+
+                td:nth-child(2){
+                    width: 3%;
+                }
+
+                td:nth-child(3){
+                    width: 12%;
+                }
+
+                td:last-child{
+                    width: 10%;
+                }
+
+                .noBorder{
+                    border-bottom: none;
+                }
+
+                .totalSum{
+                    font-weight: bold;
+                }
+            }
+        }
+        
+        footer{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+
+            margin-top: 25px;
+
+            .signature{
+                display: flex;
+                align-items: center;
+
+                gap: 42px;
+                width: 100%;
+
+                p{
+                    line-height: 18px;
+                    margin-bottom: 10px;
+                    vertical-align: top;
+                    width: 100px;
+                }
+
+                span{
+                    width: 60%;
+                    height: 18px;
+                    border-bottom: 1px solid black;
+                }
+            }
+
+            position: relative;
+            button{
+                position: absolute;    
+                right: 0;
+                bottom: 0;
+            }
+
+            
+            .returnHome{
+                position: absolute;
+                right: 0;
+                bottom: -100px;
+            }
+        }
+    }
+}
+
