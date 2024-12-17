@@ -29,6 +29,9 @@ async function renderInvoiceData(webLink) {
     });
 
     renderTotals(totalAmount, apiData.shippingPrice);
+    num = 5;
+    word = "5"
+    console.log(num * word)
 }
 
 function renderNewInvoiceNo(apiData) {
@@ -193,8 +196,10 @@ function convertToLithuanianWords(number) {
             result += "tūkstantis ";  // Singular form
         } else if (thousandsPart >= 2 && thousandsPart <= 9) {
             result += "tūkstančiai ";  // Plural form (for 2-9)
-        } else {
-            result += "tūkstančių ";  // Genitive plural form for larger numbers
+        } else if (thousandsPart >= 10 && thousandsPart <= 19) {
+            result += "tūkstančių ";  // Plural form (for 2-9)
+        }else {
+            result += "tūkstančiai ";  // Genitive plural form for larger numbers
         }
     
         integerPart %= 1000;
