@@ -1,4 +1,7 @@
 html{
+    background: linear-gradient(135deg, #062b47, #000000, #21032e);
+    height: 100vh;
+    margin: 0;
     
     body{
 
