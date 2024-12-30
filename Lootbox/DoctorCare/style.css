@@ -43,7 +43,7 @@ body {
         position: relative;
         margin: auto;
     
-        .doctor {
+        .doctors {
             font-size: 20px;
             color: #061800;
     
@@ -309,7 +309,56 @@ body {
     
         /* Main: Services */
     
-            /* Kristina */
+        .doctor {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            background-color: #FFFAF1;
+           
+            .doctor-bin {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+        
+                .doctor-holder {
+                    display: flex;
+                    width: 1120px;
+                    padding: 20px;
+                    margin: 160px 0;
+                    
+                    
+                    .text {
+                        flex: 1;
+                        padding: 20px 20px 20px 67px;
+                        
+                        h2 {
+                            font-family: var(--main-font);
+                            color: var(--brand-green);
+                            font-size: 14px;
+                            margin-bottom: 10px;
+                            line-height: 21px;
+                        }
+        
+                        h1 {
+                            font-family: var(--main-font);
+                            text-wrap: wrap;
+                            color: #061800;
+                            font-size: 40px;
+                            margin: 0;
+                            line-height: 52.08px;
+                        }
+        
+                        p {
+                            flex-wrap: wrap;
+                            font-family: var(--main-font);
+                            font-size: 16px;
+                            line-height: 24px;
+                            color: #495057;
+                        }
+                    }
+                }
+            }
+        }
     
         /* Main: Virtual Health */
         .virtual-health {
