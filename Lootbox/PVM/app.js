@@ -29,9 +29,6 @@ async function renderInvoiceData(webLink) {
     });
 
     renderTotals(totalAmount, apiData.shippingPrice);
-    num = 5;
-    word = "5"
-    console.log(num * word)
 }
 
 function renderNewInvoiceNo(apiData) {
