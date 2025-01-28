@@ -8,7 +8,6 @@ async function renderInvoiceData(webLink) {
         console.error("Error fetching data:", error);
     }
 
-    
     // Header Info
     renderNewInvoiceNo(apiData);
     renderDates(apiData);

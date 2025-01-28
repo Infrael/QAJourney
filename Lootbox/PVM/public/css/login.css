@@ -1,0 +1,25 @@
+html body main #loginForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+html body main #loginForm .inputFields {
+  display: flex;
+  flex-direction: column;
+}
+html body main #loginForm section {
+  display: flex;
+  flex-direction: column;
+}
+html body main #loginForm section .buttons {
+  margin: 25px 0;
+  display: flex;
+  justify-content: space-around;
+}
+html body main #loginForm section .buttons button {
+  color: white;
+  background-color: black;
+  height: 26px;
+  border-radius: 5px;
+}
