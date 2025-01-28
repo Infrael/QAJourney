@@ -1,0 +1,30 @@
+{
+  "name": "power_pvm",
+  "version": "0.0.1",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js",
+    "watch": "npx mix watch"
+  },
+  "keywords": [],
+  "author": "Infrael <martisius.z@gmail.com> (https://github.com/Infrael)",
+  "license": "GPL",
+  "description": "Server Based PVM Software",
+  "dependencies": {
+    "axios": "^1.7.9",
+    "body-parser": "^1.20.3",
+    "chokidar": "^4.0.3",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-handlebars": "^8.0.1",
+    "mysql2": "^3.12.0"
+  },
+  "devDependencies": {
+    "laravel-mix": "^6.0.49",
+    "nodemon": "^3.1.9",
+    "resolve-url-loader": "^5.0.0",
+    "sass": "^1.83.4",
+    "sass-loader": "^12.1.0"
+  }
+}
