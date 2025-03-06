@@ -1,120 +1,224 @@
-body {
-    height: 100vh;
-    margin: 0 auto;
-
-    background-image: url('Images/HomePageBackground.jpg');
-    background-size: cover;
+html {
+  /* 100% of viewport to lock everything into that space */
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  
+  body {
+    /* Occupy the full viewport as well */
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    
+    /* Background that scales with the viewport */
+    background-image: url("Images/background.webp");
     background-repeat: no-repeat;
-    background-position: top;
+    background-position: center;
+    background-size: cover; /* or contain, if you prefer no cropping */
+    
+    /* Use position: relative so child elements can absolutely position themselves inside */
+    position: relative;
+    overflow: hidden; /* in case of overflow issues */
 
+    /* 
+      Example approach: 
+      We place the header at the top in relative height (vh) 
+    */
     header {
-        min-width: 200px;
-        width: 100%;
-        text-align: center;
-        font-size: 40px;
-
-        .highlight {
-            text-shadow:
-                1px 1px 0px white,
-                -1px 1px 0px white,
-                1px -1px 0px white,
-                -1px -1px 0px white;
-        }
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 10vh; /* 10% of viewport height */
+      
+      background: rgb(0, 0, 0);
+      mask-image: linear-gradient(to bottom, rgb(0, 0, 0), rgba(0, 0, 0, 0));
+      -webkit-mask-image: linear-gradient(to bottom, rgb(0, 0, 0), rgba(0, 0, 0, 0));
     }
 
-    main {
+    /* 
+      The flex-container is placed at ~20% down the screen (top: 20vh).
+      Its height is also in vh, so it scales with screen height.
+      The gap is in vw for horizontal spacing that scales with screen width.
+    */
+    .flex-container {
+      position: absolute;
+      top: 20vh;
+      left: 50%;
+      transform: translateX(-50%);
+      
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 3vw;      /* horizontal gap scales with width */
+      height: 30vh;  /* flex-container is 30% of screen height */
+      
+      .box {
+        flex-shrink: 0; /* prevent box from shrinking below min sizes */
+        background: linear-gradient(to top, rgb(0, 255, 255), rgb(75, 0, 130));
+        border: 0.2vh solid rgba(0, 255, 255, 0.5);
+        border-radius: 1vh;
+        
+        /* Let’s define the box’s width/height in relative units */
+        width: 10vw;
+        height: 100%; /* take full flex-container height */
+        
         display: flex;
-        flex-direction: column;
-        justify-content: center;
         align-items: center;
+        justify-content: center;
+        color: cyan;
+        font-size: 2vh; /* scales text with viewport height */
+      }
 
-        background-color: rgba(11, 189, 212, 0.230);
+      .box1 {
+        /* Slightly bigger width, scaled by vw */
+        width: 12vw;
+      }
 
-        .htmlCss,
-        .ender {
-            flex: 1;
-
-            padding: 0px 50px 50px 50px;
-
-            width: 100%;
-
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-
-
-            color: #052249cb;
-            font-size: 30px;
-            font-weight: 700;
-
-
-
-            .htmlCssLinks {
-                display: flex;
-                justify-content: space-between;
-
-                width: 80%;
-            }
-        }
-
-        .ender {
-            justify-content: center;
-            background: none;
-
-            margin-top: 50px;
-        }
-
-        a {
-            color: #052249cb;
-            transition: 0.3s;
-        }
-
-        a:hover {
-            color: #08bd59cb;
-            text-shadow: 1px 1px 0px #095720e1,
-                -1px 1px 0px #095720e1,
-                1px -1px 0px #095720e1,
-                -1px -1px 0px #095720e1;
-        }
-
-        button {
-            height: 355px;
-            width: 350px;
-
-            border-radius: 175px;
-            font-weight: 700;
-            font-size: 22px;
-
-            background-image: url('Images/Inspiration.jpg');
-            background-size: cover;
-            background-position: center;
-
-            color: rgb(30, 156, 240);
-            font-weight: 700;
-            font-size: 42px;
-
-            transition: 0.5s;
-        }
-
-        button:hover {
-            box-shadow: 0px 0px 35px 35px rgba(112, 226, 255, 0.48);
-            border-radius: 200px;
-
-            height: 360px;
-            width: 365px;
-
-        }
+      .box2, .box3 {
+        /* Even bigger width */
+        width: 15vw;
+      }
     }
 
-    footer {
+    /* 
+      The section is placed at ~65% down the screen. 
+      The cards are sized in vh/vw and transform is set with perspective. 
+    */
+    section {
+      position: absolute;
+      top: 65vh;
+      left: 50%;
+      transform: translateX(-50%);
+      
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 5vw;  /* spacing between cards scales with width */
+      perspective: 1000px; /* 3D perspective */
 
+      .card {
+        width: 12vw;
+        height: 20vh;
+        
+        background: linear-gradient(to bottom, #1f1f1f, #181818);
+        border-radius: 1vh;
+        border: 0.2vh solid rgba(0, 255, 255, 0.5);
+        
         display: flex;
-        justify-content: space-between;
         align-items: flex-end;
-        position: fixed;
-        bottom: 0;
-        width: 100%;
+        justify-content: center;
+        
+        color: cyan;
+        font-size: 2vh; /* scale text with viewport height */
+        text-align: center;
+        
+        transform-origin: center bottom;
+      }
 
-        color: white;
+      .card:nth-child(1) {
+        transform: perspective(1000px) rotateX(30deg) skewX(-15deg);
+        box-shadow: -1vw 2vh 1vh 1vh rgba(0, 0, 0, 0.72);
+      }
+      .card:nth-child(2) {
+        transform: perspective(1000px) rotateX(30deg) skewX(-5deg);
+        box-shadow: 0vw 2vh 1vh 1vh rgba(0, 0, 0, 0.72);
+      }
+      .card:nth-child(3) {
+        transform: perspective(1000px) rotateX(30deg) skewX(5deg);
+        box-shadow: 0vw 2vh 1vh 1vh rgba(0, 0, 0, 0.72);
+      }
+      .card:nth-child(4) {
+        transform: perspective(1000px) rotateX(30deg) skewX(15deg);
+        box-shadow: 1vw 2vh 1vh 1vh rgba(0, 0, 0, 0.72);
+      }
     }
+  }
+}
+
+/* ============================= */
+/* Example Media Queries for Responsiveness */
+/* ============================= */
+
+/* 
+   As the screen shrinks, you can re-scale or adjust the 
+   positions further if needed (optional). 
+*/
+@media (max-width: 1024px) {
+  html body {
+    background-position: center; 
+  }
+
+  body .flex-container {
+    top: 15vh;
+    height: 25vh;
+    gap: 2vw;
+    .box { font-size: 1.5vh; }
+    .box1 { width: 14vw; }
+    .box2, .box3 { width: 18vw; }
+  }
+
+  body section {
+    top: 60vh;
+    gap: 3vw;
+    .card {
+      width: 14vw;
+      height: 18vh;
+      font-size: 1.8vh;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  body .flex-container {
+    top: 12vh;
+    gap: 2vw;
+    height: 20vh;
+    .box { font-size: 1.5vh; }
+    .box1 { width: 16vw; }
+    .box2, .box3 { width: 20vw; }
+  }
+
+  body section {
+    top: 58vh;
+    gap: 3vw;
+    .card {
+      width: 16vw;
+      height: 16vh;
+      font-size: 1.6vh;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  body header {
+    height: 8vh; 
+  }
+
+  body .flex-container {
+    flex-direction: column;
+    top: 10vh;
+    height: auto;
+    gap: 2vh; 
+    .box {
+      width: 60vw;
+      height: 12vh;
+      font-size: 1.4vh;
+    }
+  }
+
+  body section {
+    flex-direction: column;
+    top: 55vh;
+    gap: 3vh; 
+    .card {
+      width: 60vw;
+      height: 20vh;
+      font-size: 1.5vh;
+      box-shadow: none;
+      transform: none;
+    }
+  }
 }
