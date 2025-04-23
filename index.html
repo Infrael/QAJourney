@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body>
     <!-- Header -->
     <header class="header" id="header">
@@ -15,7 +17,7 @@
             <div class="logo">
                 <a href="#">Žilvinas Martišius</a>
             </div>
-            
+
             <nav class="desktop-nav">
                 <ul>
                     <li><a href="#about">About</a></li>
@@ -24,14 +26,14 @@
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
-            
+
             <button class="mobile-menu-btn" aria-label="Toggle menu">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
             </button>
         </div>
-        
+
         <div class="mobile-nav">
             <ul>
                 <li><a href="#about">About</a></li>
@@ -48,7 +50,10 @@
             <h1>Žilvinas Martišius</h1>
             <h2>IT Professional</h2>
             <p class="summary">
-                Self-driven and detail-oriented IT Specialist with over a decade of experience supporting complex financial systems, infrastructure monitoring, application support, and process optimization in the banking sector. Adept at scripting, incident management, client communication, and cross-functional collaboration. Passionate about continuous improvement and technology-driven solutions.
+                Self-driven and detail-oriented IT Specialist with over a decade of experience supporting complex
+                financial systems, process optimization, and infrastructure monitoring in the
+                banking sector. Adept at scripting, incident management, client communication, and cross-functional
+                collaboration. Passionate about psychology, video games, and technology-driven solutions.
             </p>
             <div class="hero-buttons">
                 <a href="#contact" class="btn primary-btn">Contact Me</a>
@@ -61,7 +66,7 @@
     <section id="skills" class="skills-section">
         <div class="container">
             <h2 class="section-title">Skills & Expertise</h2>
-            
+
             <div class="skills-grid">
                 <!-- Technical Skills -->
                 <div class="skill-card">
@@ -69,19 +74,21 @@
                     <div class="tags">
                         <span class="tag blue-tag">Python</span>
                         <span class="tag blue-tag">C#</span>
-                        <span class="tag blue-tag">Tech Support</span>
+                        <span class="tag blue-tag">Customer Support</span>
                         <span class="tag blue-tag">Problem Solving</span>
-                        <span class="tag blue-tag">MS Office</span>
+                        <span class="tag blue-tag">QA Testing</span>
                         <span class="tag blue-tag">Windows</span>
                         <span class="tag blue-tag">Incident Management</span>
-                        <span class="tag blue-tag">Process Improvement</span>
-                        <span class="tag blue-tag">Server Management</span>
+                        <span class="tag blue-tag">Escalation Management</span>
                         <span class="tag blue-tag">Application Support</span>
-                        <span class="tag blue-tag">Documentation Management</span>
+                        <span class="tag blue-tag">Cypress</span>
                         <span class="tag blue-tag">Security Risk Assessment</span>
+                        <span class="tag blue-tag">Agile Methodology</span>
+                        <span class="tag blue-tag">Postman</span>
+                        <span class="tag blue-tag">Server Management</span>
                     </div>
                 </div>
-                
+
                 <!-- Languages -->
                 <div class="skill-card">
                     <h3>Languages</h3>
@@ -89,18 +96,23 @@
                         <li>Lithuanian - C2 (Mother Tongue)</li>
                         <li>English - C2 (Business fluent)</li>
                         <li>Russian - B1 (Intermediate)</li>
-                        <li>German - A1 (Beginner)</li>
+                        <li>Japaneese - A0 (True Beginner)</li>
                     </ul>
                 </div>
-                
+
                 <!-- Interests -->
                 <div class="skill-card">
                     <h3>Interests</h3>
                     <div class="tags">
                         <span class="tag indigo-tag">Movies</span>
-                        <span class="tag indigo-tag">Games</span>
+                        <span class="tag indigo-tag">Video Games</span>
                         <span class="tag indigo-tag">Snowboarding</span>
-                        <span class="tag indigo-tag">Psychology</span>
+                        <span class="tag indigo-tag">A.I.</span>
+                        <span class="tag indigo-tag">Dungeons & Dragons</span>
+                        <span class="tag indigo-tag">Dogs</span>
+                        <span class="tag indigo-tag">Meanings of Existence</span>
+                        <span class="tag indigo-tag">Virtual Reality</span>
+                        <span class="tag indigo-tag">Magic</span>
                     </div>
                 </div>
             </div>
@@ -111,26 +123,22 @@
     <section id="experience" class="experience-section">
         <div class="container">
             <h2 class="section-title">Professional Experience</h2>
-            
+
             <!-- Search and filter UI -->
             <div class="search-container">
                 <div class="search-box">
                     <i class="fas fa-search search-icon"></i>
-                    <input 
-                        type="search" 
-                        id="experience-search" 
-                        placeholder="Search by position, company, or keywords..."
-                        class="search-input"
-                    >
+                    <input type="search" id="experience-search"
+                        placeholder="Search by position, company, or keywords..." class="search-input">
                 </div>
                 <div id="search-results-count" class="search-results-count"></div>
             </div>
-            
+
             <!-- Experience items -->
             <div id="experience-list" class="experience-list">
                 <!-- Experience items will be populated by JavaScript -->
             </div>
-            
+
             <!-- No results message -->
             <div id="no-results" class="no-results hidden">
                 <p>No experience entries match your search.</p>
@@ -143,7 +151,7 @@
     <section id="contact" class="contact-section">
         <div class="container">
             <h2 class="section-title">Get In Touch</h2>
-            
+
             <div class="contact-container">
                 <div class="contact-grid">
                     <!-- Contact Info -->
@@ -163,63 +171,43 @@
                                 <p class="info-value">Vilnius, Lithuania</p>
                             </div>
                         </div>
-                        
+
                         <p class="contact-message">
                             Feel free to reach out for opportunities or just to say hello!
                         </p>
                     </div>
-                    
+
                     <!-- Contact Form -->
                     <div class="contact-form">
                         <h3>Send a Message</h3>
-                        
+
                         <div id="form-success" class="form-message success-message hidden">
                             Your message has been sent successfully! I'll get back to you soon.
                         </div>
-                        
+
                         <div id="form-error" class="form-message error-message hidden">
                             There was an error sending your message. Please try again.
                         </div>
-                        
+
                         <form id="contact-form">
                             <div class="form-group">
                                 <label for="name">Name</label>
-                                <input
-                                    type="text"
-                                    id="name"
-                                    name="name"
-                                    placeholder="Your name"
-                                    required
-                                >
+                                <input type="text" id="name" name="name" placeholder="Your name" required>
                                 <p class="error-text" id="name-error"></p>
                             </div>
                             <div class="form-group">
                                 <label for="email">Email</label>
-                                <input
-                                    type="email"
-                                    id="email"
-                                    name="email"
-                                    placeholder="your.email@example.com"
-                                    required
-                                >
+                                <input type="email" id="email" name="email" placeholder="your.email@example.com"
+                                    required>
                                 <p class="error-text" id="email-error"></p>
                             </div>
                             <div class="form-group">
                                 <label for="message">Message</label>
-                                <textarea
-                                    id="message"
-                                    name="message"
-                                    rows="4"
-                                    placeholder="Your message"
-                                    required
-                                ></textarea>
+                                <textarea id="message" name="message" rows="4" placeholder="Your message"
+                                    required></textarea>
                                 <p class="error-text" id="message-error"></p>
                             </div>
-                            <button
-                                type="submit"
-                                id="submit-button"
-                                class="btn primary-btn submit-btn"
-                            >
+                            <button type="submit" id="submit-button" class="btn primary-btn submit-btn">
                                 Send Message
                             </button>
                         </form>
@@ -232,28 +220,20 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <div class="spotify-container">
-                <!-- Spotify playlist -->
-                <div class="spotify-widget">
-                    <iframe 
-                        style="border-radius:12px" 
-                        src="https://open.spotify.com/embed/playlist/4VKglc3Xh6VZXwu98ER7HD?utm_source=generator&theme=0" 
-                        width="100%" 
-                        height="152" 
-                        frameborder="0" 
-                        allowfullscreen="" 
-                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
-                        loading="lazy"
-                    ></iframe>
-                </div>
-            </div>
-            
             <div class="footer-info">
                 <div class="footer-brand">
                     <p class="footer-name">Žilvinas Martišius</p>
                     <p class="footer-title">IT Professional</p>
                 </div>
-                
+
+                <div class="spotify-container spotify-widget">
+                    <iframe style="border-radius:12px"
+                        src="https://open.spotify.com/embed/playlist/4VKglc3Xh6VZXwu98ER7HD?utm_source=generator&theme=0"
+                        width="100%" height="152" frameborder="0" allowfullscreen=""
+                        allow="clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                        loading="lazy"></iframe>
+                </div>
+
                 <div class="footer-copyright">
                     <p>&copy; <span id="current-year"></span> All rights reserved</p>
                     <p>Built with HTML, CSS and JavaScript</p>
@@ -271,44 +251,52 @@
                 "phone": "+370 626 88279",
                 "email": "martisius.z@gmail.com"
             },
-            "summary": "Self-driven and detail-oriented IT Specialist with over a decade of experience supporting complex financial systems, infrastructure monitoring, application support, and process optimization in the banking sector. Adept at scripting, incident management, client communication, and cross-functional collaboration. Passionate about continuous improvement and technology-driven solutions.",
+            "summary": "Self-driven and detail-oriented IT Specialist with over a decade of experience supporting complex financial systems, process optimization, and infrastructure monitoring in the banking sector. Adept at scripting, incident management, client communication, and cross-functional collaboration. Passionate about psychology, video games, and technology-driven solutions.",
             "experience": [
+                {
+                    "date": "Oct 2024 – Apr 2025",
+                    "title": "Manual and Automated Software Testing Course",
+                    "company": "Bit.lt (Remote, Lithuania)",
+                    "description": "Completed a comprehensive 24-week QA training program covering manual and automated testing methodologies. Gained hands-on experience with Cypress for end-to-end testing and Postman for API testing. Managed test cases and defects using JIRA. Final project — CandyStore (https://github.com/Infrael/CandyStore) — involved building automated test suites to ensure full coverage of a web application's functionality and interface.",
+                    "tags": ["Manual Testing", "Automated Testing", "Cypress", "Postman", "JIRA", "Test Case Design", "Bug Tracking", "API Testing", "UI Testing", "GitHub", "GitHub Actions"]
+                },
                 {
                     "date": "May 2013 – Oct 2019",
                     "title": "FI & WSO IT Specialist",
                     "company": "Danske Bank A/S Lithuania",
-                    "description": "Monitoring system stability, investigating and supporting Fixed Income trading related issues for internal customers. Maintaining in-house scripts (Python), server management, identifying and implementing process improvements. Additionally, I was assigned to assist with Wall Street Office support, which includes, but is not limited to participating in daily scrum sessions, user and application support, documentation management, development (C#), application patching, vendor communication, security risk assessments, hosting morning meetings.",
-                    "tags": ["Python", "C#", "Fixed Income", "Server Management", "Process Improvement", "Scrum", "Application Support", "Documentation", "Security", "Risk Assessment", "Financial Services"]
+                    "description": "Supported Fixed Income trading systems and Wall Street Office tools across multiple environments. Maintained in-house scripts (Python), managed servers, and participated in system stability monitoring. Contributed to code deployments by updating Docker containers and verifying production changes, including occasional unit testing. Logged and tracked technical issues through JIRA. Collaborated daily with developers, analysts, and stakeholders in agile scrum meetings to ensure timely resolution and smooth releases. Occasionally participated in on-call rotation for production systems.",
+                    "tags": ["Python", "C#", "Docker", "Fixed Income", "Server Management", "Process Improvement", "Scrum", "Application Support", "Unit Testing", "JIRA", "CI/CD", "Production Support", "Security Risk Assessment", "Financial Services"]
                 },
                 {
                     "date": "Prior to May 2013",
                     "title": "BARX Client Technical Services Analyst",
                     "company": "Barclays Group Operations Limited",
-                    "description": "Providing technical support for institutional clients that trade with Barclays for all products related to Foreign Exchange, Fixed Income, Futures and Options, and Structured Products. It consists of on-boarding and maintaining client accounts across multiple trading platforms, monitoring internal and external communication channels, and troubleshooting client connectivity, installation, and network issues.",
-                    "tags": ["Technical Support", "Foreign Exchange", "Fixed Income", "Futures", "Options", "Trading Platforms", "Client Management", "Troubleshooting", "Network", "Financial Services"]
+                    "description": "Delivered technical support to institutional clients across trading platforms involving Foreign Exchange, Fixed Income, and Structured Products. Handled onboarding, account configuration, and connectivity troubleshooting. Tracked issues and daily tasks using JIRA and ServiceNow, coordinated with developers for escalations, and occasionally contributed to internal software updates. Maintained SLA expectations and participated in post-incident reviews when required.",
+                    "tags": ["Technical Support", "Financial Products", "Client Onboarding", "ServiceNow", "JIRA", "Outlook", "Connectivity", "Trading Platforms", "Escalation Handling", "Incident Logging"]
                 },
                 {
                     "date": "Prior to BARX role",
                     "title": "Service Assurance Analyst",
                     "company": "Barclays Group Operations Limited",
-                    "description": "Role was mostly focused on Incident lifecycle management: data analysis, writing business reports, and communicating with teams seeking to optimize our processes. Assisted with assessment center activities and worked on an automation project.",
-                    "tags": ["Incident Management", "Data Analysis", "Business Reports", "Process Optimization", "Automation", "Assessment Center"]
+                    "description": "Focused on the incident lifecycle by analyzing ServiceNow data to uncover patterns and improve operational processes. Created reports and presentations to communicate incident trends and SLA metrics using Excel and PowerPoint. Contributed to improving support workflows and standardizing reporting templates used for daily incident tracking. Helped maintain internal SOPs and supported the creation of knowledge base documentation.",
+                    "tags": ["Incident Management", "ServiceNow", "Excel", "Data Analysis", "Reporting", "SLA Metrics", "Process Optimization", "PowerPoint", "Team Collaboration"]
                 },
                 {
                     "date": "Prior to Service Assurance role",
                     "title": "Senior Support Analyst",
                     "company": "Barclays Group Operations Limited",
-                    "description": "Role was primarily focused on business-critical escalation management, which also included identifying areas of improvement within our service as well as communicating those improvements with multiple teams and stakeholders.",
-                    "tags": ["Escalation Management", "Business-Critical", "Service Improvement", "Stakeholder Communication", "Team Collaboration"]
+                    "description": "Handled high-priority escalations for business-critical incidents, ensuring timely coordination across departments and quick resolution paths. Acted as the main liaison between technical teams and stakeholders to maintain transparency during outages or major disruptions. Communication was primarily conducted via Outlook, phone, and internal ticketing systems.",
+                    "tags": ["Escalation Management", "Incident Handling", "Stakeholder Communication", "Business-Critical", "Outlook", "Cross-Team Coordination", "Client Impact"]
                 },
                 {
                     "date": "Career start at Barclays",
                     "title": "Telephony Support Analyst",
                     "company": "Barclays Group Operations Limited",
-                    "description": "I've began my career in Barclays as a first line IT Support analyst for internal customers. Day to day tasks were incident troubleshooting and answering queries via telephone or e-mails. After gaining more experience, I've been trusted with managing business-critical escalations.",
-                    "tags": ["IT Support", "First Line Support", "Incident Troubleshooting", "Customer Service", "Telephony", "Email Support", "Escalation Management"]
+                    "description": "Started at Barclays as a first-line IT Support analyst for internal customers. Provided technical assistance via phone and email, focusing on incident resolution and system troubleshooting. As experience grew, took on business-critical escalations and became a trusted contact for urgent support needs.",
+                    "tags": ["IT Support", "Incident Troubleshooting", "Customer Service", "First Line Support", "Telephony", "Email Support", "Escalation Management"]
                 }
             ],
+
             "skills": [
                 "Python",
                 "C#",
@@ -341,4 +329,5 @@
     <!-- JavaScript -->
     <script src="js/main.js"></script>
 </body>
+
 </html>

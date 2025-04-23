@@ -1,9 +1,3 @@
-/**
- * Main JavaScript for Žilvinas Martišius Portfolio
- * Author: Manus AI
- * Date: April 2025
- */
-
 // DOM Elements
 const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
 const mobileNav = document.querySelector('.mobile-nav');
@@ -179,59 +173,43 @@ function updateSearchResultsCount(count) {
 // Handle form submission
 function handleFormSubmit(e) {
     e.preventDefault();
-    
-    // Reset error messages
+
+    // Reset messages
     document.querySelectorAll('.error-text').forEach(el => el.textContent = '');
     formSuccess.classList.add('hidden');
     formError.classList.add('hidden');
-    
-    // Get form data
+
+    // Get form values
     const formData = new FormData(contactForm);
     const name = formData.get('name');
     const email = formData.get('email');
     const message = formData.get('message');
-    
-    // Validate form
+
     let isValid = true;
-    
-    if (!name || name.trim() === '') {
+
+    if (!name.trim()) {
         document.getElementById('name-error').textContent = 'Name is required';
         isValid = false;
     }
-    
-    if (!email || email.trim() === '') {
+
+    if (!email.trim()) {
         document.getElementById('email-error').textContent = 'Email is required';
         isValid = false;
     } else if (!/^\S+@\S+\.\S+$/.test(email)) {
         document.getElementById('email-error').textContent = 'Please enter a valid email address';
         isValid = false;
     }
-    
-    if (!message || message.trim() === '') {
+
+    if (!message.trim()) {
         document.getElementById('message-error').textContent = 'Message is required';
         isValid = false;
     }
-    
-    if (!isValid) {
-        return;
-    }
-    
-    // Simulate form submission
-    submitButton.textContent = 'Sending...';
-    submitButton.disabled = true;
-    
-    setTimeout(() => {
-        // Show success message
-        formSuccess.classList.remove('hidden');
-        contactForm.reset();
-        
-        // Reset button
-        submitButton.textContent = 'Send Message';
-        submitButton.disabled = false;
-        
-        // Hide success message after 5 seconds
-        setTimeout(() => {
-            formSuccess.classList.add('hidden');
-        }, 5000);
-    }, 1500);
+
+    if (!isValid) return;
+
+    // Construct the mailto link
+    const mailto = `mailto:martisius.z@gmail.com?subject=Message from ${encodeURIComponent(name)}&body=${encodeURIComponent(message)}`;
+
+    // Trigger mail client
+    window.location.href = mailto;
 }
