@@ -1,0 +1,184 @@
+{
+    "personal_info": {
+        "name": "Žilvinas Martišius",
+        "location": "Vilnius, Lithuania",
+        "phone": "+370 626 88279",
+        "email": "martisius.z@gmail.com"
+    },
+    "summary": "Self-driven and detail-oriented IT Specialist with over a decade of experience supporting complex financial systems, process optimization, and infrastructure monitoring in the banking sector. Adept at scripting, incident management, client communication, and cross-functional collaboration. Passionate about psychology, video games, and technology-driven solutions.",
+    "experience": [
+        {
+            "date": "Oct 2024 – Apr 2025",
+            "title": "Manual and Automated Software Testing Course",
+            "company": "Bit.lt (Remote, Lithuania)",
+            "description": "Completed a comprehensive 24-week QA training program covering manual and automated testing methodologies. Gained hands-on experience with Cypress for end-to-end testing and Postman for API testing. Managed test cases and defects using JIRA. Final project — CandyStore (https://github.com/Infrael/CandyStore) — involved building automated test suites to ensure full coverage of a web application's functionality and interface.",
+            "tags": [
+                "Manual Testing",
+                "Automated Testing",
+                "Cypress",
+                "Postman",
+                "JIRA",
+                "Test Case Design",
+                "Bug Tracking",
+                "API Testing",
+                "UI Testing",
+                "GitHub",
+                "GitHub Actions"
+            ]
+        },
+        {
+            "date": "May 2020 – Aug 2024",
+            "title": "FI & WSO IT Specialist",
+            "company": "Danske Bank A/S Lithuania",
+            "description": "Supported Fixed Income trading systems and Wall Street Office tools across multiple environments. Maintained in-house scripts (Python), managed servers, and participated in system stability monitoring. Contributed to code deployments by updating Docker containers and verifying production changes, including occasional unit testing. Logged and tracked technical issues through JIRA. Collaborated daily with developers, analysts, and stakeholders in agile scrum meetings to ensure timely resolution and smooth releases. Occasionally participated in on-call rotation for production systems.",
+            "tags": [
+                "Python",
+                "C#",
+                "Docker",
+                "Fixed Income",
+                "Server Management",
+                "Process Improvement",
+                "Scrum",
+                "Application Support",
+                "Unit Testing",
+                "JIRA",
+                "CI/CD",
+                "Production Support",
+                "Security Risk Assessment",
+                "Financial Services"
+            ]
+        },
+        {
+            "date": "Prior to May 2020",
+            "title": "BARX Client Technical Services Analyst",
+            "company": "Barclays Group Operations Limited",
+            "description": "Delivered technical support to institutional clients across trading platforms involving Foreign Exchange, Fixed Income, and Structured Products. Handled onboarding, account configuration, and connectivity troubleshooting. Tracked issues and daily tasks using JIRA and ServiceNow, coordinated with developers for escalations, and occasionally contributed to internal software updates. Maintained SLA expectations and participated in post-incident reviews when required.",
+            "tags": [
+                "Technical Support",
+                "Financial Products",
+                "Client Onboarding",
+                "ServiceNow",
+                "JIRA",
+                "Outlook",
+                "Connectivity",
+                "Trading Platforms",
+                "Escalation Handling",
+                "Incident Logging"
+            ]
+        },
+        {
+            "date": "Prior to BARX role",
+            "title": "Service Assurance Analyst",
+            "company": "Barclays Group Operations Limited",
+            "description": "Focused on the incident lifecycle by analyzing ServiceNow data to uncover patterns and improve operational processes. Created reports and presentations to communicate incident trends and SLA metrics using Excel and PowerPoint. Contributed to improving support workflows and standardizing reporting templates used for daily incident tracking. Helped maintain internal SOPs and supported the creation of knowledge base documentation.",
+            "tags": [
+                "Incident Management",
+                "ServiceNow",
+                "Excel",
+                "Data Analysis",
+                "Reporting",
+                "SLA Metrics",
+                "Process Optimization",
+                "PowerPoint",
+                "Team Collaboration"
+            ]
+        },
+        {
+            "date": "Prior to Service Assurance role",
+            "title": "Senior Support Analyst",
+            "company": "Barclays Group Operations Limited",
+            "description": "Handled high-priority escalations for business-critical incidents, ensuring timely coordination across departments and quick resolution paths. Acted as the main liaison between technical teams and stakeholders to maintain transparency during outages or major disruptions. Communication was primarily conducted via Outlook, phone, and internal ticketing systems.",
+            "tags": [
+                "Escalation Management",
+                "Incident Handling",
+                "Stakeholder Communication",
+                "Business-Critical",
+                "Outlook",
+                "Cross-Team Coordination",
+                "Client Impact"
+            ]
+        },
+        {
+            "date": "Career start at Barclays",
+            "title": "Telephony Support Analyst",
+            "company": "Barclays Group Operations Limited",
+            "description": "Started at Barclays as a first-line IT Support analyst for internal customers. Provided technical assistance via phone and email, focusing on incident resolution and system troubleshooting. As experience grew, took on business-critical escalations and became a trusted contact for urgent support needs.",
+            "tags": [
+                "IT Support",
+                "Incident Troubleshooting",
+                "Customer Service",
+                "First Line Support",
+                "Telephony",
+                "Email Support",
+                "Escalation Management"
+            ]
+        }
+    ],
+    "skills": [
+        "Manual Testing",
+        "Automated Testing",
+        "QA Testing",
+        "Unit Testing",
+        "Cypress",
+        "Postman",
+        "JIRA",
+        "ServiceNow",
+        "CI/CD",
+        "Docker",
+        "Agile Methodology",
+        "Scrum",
+        "Regression Testing",
+        "Python",
+        "C#",
+        "Excel",
+        "PowerPoint",
+        "Windows",
+        "GitHub",
+        "Application Support",
+        "Incident Management",
+        "Escalation Management",
+        "Production Support",
+        "Server Management",
+        "Technical Support",
+        "IT Support",
+        "Client Communication",
+        "Stakeholder Communication",
+        "Cross-Team Collaboration",
+        "Customer Support",
+        "Team Collaboration",
+        "Process Improvement",
+        "Process Optimization",
+        "Data Analysis",
+        "Reporting",
+        "SLA Metrics",
+        "Financial Services",
+        "Fixed Income",
+        "Financial Products",
+        "Trading Platforms",
+        "Client Onboarding",
+        "Connectivity",
+        "Problem Solving",
+        "Business-Critical",
+        "Incident Logging",
+        "Outlook",
+        "Email Support"
+    ],
+    "languages": [
+        "Lithuanian - C2 (Mother Tongue)",
+        "English - C2 (Business fluent)",
+        "Russian - B1 (Intermediate)",
+        "Japaneese - A0 (True Beginner)"
+    ],
+    "interests": [
+        "Movies",
+        "Games",
+        "Snowboarding",
+        "Psychology",
+        "A.I.",
+        "Dungeons & Dragons",
+        "Dogs",
+        "Meanings of Existence",
+        "Virtual Reality",
+        "Magic"
+    ]
+}

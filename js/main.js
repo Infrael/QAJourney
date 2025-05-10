@@ -1,4 +1,3 @@
-// DOM Elements
 const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
 const mobileNav = document.querySelector('.mobile-nav');
 const header = document.getElementById('header');
@@ -11,52 +10,35 @@ const contactForm = document.getElementById('contact-form');
 const formSuccess = document.getElementById('form-success');
 const formError = document.getElementById('form-error');
 const submitButton = document.getElementById('submit-button');
-const currentYearSpan = document.getElementById('current-year');
 
-// Get CV data from the embedded JSON
-const cvData = JSON.parse(document.getElementById('cv-data').textContent);
-const experiences = cvData.experience;
+const cvData = await (await fetch('data/data.json')).json();
 
-// Initialize the page
-document.addEventListener('DOMContentLoaded', () => {
-    // Set current year in footer
-    currentYearSpan.textContent = new Date().getFullYear();
-    
-    // Render experience items
-    renderExperienceItems(experiences);
-    
-    // Initialize event listeners
-    initEventListeners();
-});
+renderRandomSkills();
+renderExperienceItems(cvData.experience);
 
-// Initialize all event listeners
+initEventListeners();
+
 function initEventListeners() {
-    // Mobile menu toggle
     if (mobileMenuBtn) {
         mobileMenuBtn.addEventListener('click', toggleMobileMenu);
     }
     
-    // Experience search
     if (experienceSearch) {
         experienceSearch.addEventListener('input', handleExperienceSearch);
     }
     
-    // Clear search button
     if (clearSearchBtn) {
         clearSearchBtn.addEventListener('click', clearSearch);
     }
     
-    // Contact form submission
     if (contactForm) {
         contactForm.addEventListener('submit', handleFormSubmit);
     }
     
-    // Smooth scrolling for navigation links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
-            e.preventDefault();
+        anchor.addEventListener('click', function(event) {
+            event.preventDefault();
             
-            // Close mobile menu if open
             if (mobileNav.classList.contains('active')) {
                 mobileNav.classList.remove('active');
             }
@@ -73,7 +55,6 @@ function initEventListeners() {
         });
     });
     
-    // Header scroll effect
     window.addEventListener('scroll', () => {
         if (window.scrollY > 50) {
             header.classList.add('scrolled');
@@ -83,16 +64,25 @@ function initEventListeners() {
     });
 }
 
-// Toggle mobile menu
 function toggleMobileMenu() {
     mobileNav.classList.toggle('active');
     
-    // Toggle hamburger to X animation
     const bars = mobileMenuBtn.querySelectorAll('.bar');
     bars.forEach(bar => bar.classList.toggle('active'));
 }
 
-// Render experience items
+function getRandomSkills(skills, count = 7) {
+    const shuffled = [...skills].sort(() => 0.5 - Math.random());
+    return shuffled.slice(0, count);
+}
+
+function renderRandomSkills() {
+    const skillContainer = document.getElementById('skills-tags');
+    if (!skillContainer) return;
+    const randomSkills = getRandomSkills(cvData.skills, 10);
+    skillContainer.innerHTML = randomSkills.map(skill => `<span class="tag blue-tag">${skill}</span>`).join('');
+}
+
 function renderExperienceItems(items) {
     experienceList.innerHTML = '';
     
@@ -100,7 +90,6 @@ function renderExperienceItems(items) {
         const experienceItem = document.createElement('div');
         experienceItem.className = 'experience-item';
         
-        // Create tags HTML
         let tagsHtml = '';
         if (exp.tags && exp.tags.length > 0) {
             tagsHtml = `
@@ -123,13 +112,11 @@ function renderExperienceItems(items) {
         experienceList.appendChild(experienceItem);
     });
     
-    // Update search results count
     updateSearchResultsCount(items.length);
 }
 
-// Handle experience search
-function handleExperienceSearch(e) {
-    const searchTerm = e.target.value.toLowerCase().trim();
+function handleExperienceSearch(event) {
+    const searchTerm = event.target.value.toLowerCase().trim();
     
     if (!searchTerm) {
         renderExperienceItems(experiences);
@@ -153,14 +140,12 @@ function handleExperienceSearch(e) {
     }
 }
 
-// Clear search
 function clearSearch() {
     experienceSearch.value = '';
     renderExperienceItems(experiences);
     noResults.classList.add('hidden');
 }
 
-// Update search results count
 function updateSearchResultsCount(count) {
     if (!experienceSearch.value.trim()) {
         searchResultsCount.textContent = '';
@@ -170,16 +155,13 @@ function updateSearchResultsCount(count) {
     searchResultsCount.textContent = `Showing ${count} ${count === 1 ? 'result' : 'results'} ${count !== experiences.length ? `out of ${experiences.length}` : ''}`;
 }
 
-// Handle form submission
 function handleFormSubmit(e) {
     e.preventDefault();
 
-    // Reset messages
     document.querySelectorAll('.error-text').forEach(el => el.textContent = '');
     formSuccess.classList.add('hidden');
     formError.classList.add('hidden');
 
-    // Get form values
     const formData = new FormData(contactForm);
     const name = formData.get('name');
     const email = formData.get('email');
@@ -207,9 +189,6 @@ function handleFormSubmit(e) {
 
     if (!isValid) return;
 
-    // Construct the mailto link
     const mailto = `mailto:martisius.z@gmail.com?subject=Message from ${encodeURIComponent(name)}&body=${encodeURIComponent(message)}`;
-
-    // Trigger mail client
     window.location.href = mailto;
 }

@@ -2,16 +2,15 @@
 <html lang="en">
 
 <head>
+    <title>Žilvinas Martišius | Portfolio</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Žilvinas Martišius | Portfolio</title>
     <link rel="stylesheet" href="css/styles.css">
-    <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script type="module" src="js/main.js"></script>
 </head>
 
 <body>
-    <!-- Header -->
     <header class="header" id="header">
         <div class="container">
             <div class="logo">
@@ -44,16 +43,15 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
     <section id="about" class="hero-section">
         <div class="container">
             <h1>Žilvinas Martišius</h1>
             <h2>IT Professional</h2>
             <p class="summary">
                 Self-driven and detail-oriented IT Specialist with over a decade of experience supporting complex
-                financial systems, process optimization, and infrastructure monitoring in the
+                financial systems, process optimization, and infrastructure monitoring within the
                 banking sector. Adept at scripting, incident management, client communication, and cross-functional
-                collaboration. Passionate about psychology, video games, and technology-driven solutions.
+                collaboration.
             </p>
             <div class="hero-buttons">
                 <a href="#contact" class="btn primary-btn">Contact Me</a>
@@ -62,34 +60,42 @@
         </div>
     </section>
 
-    <!-- Skills Section -->
+    <section id="disclaimer" class="motivation-section">
+        <div class="container">
+            <h3>Motivational Disclaimer</h3>
+
+            <p class="summary">
+                Before you venture further into my portfolio, I want to acknowledge that although my CV doesn`t yet
+                include the title “QA Engineer”, I`ve spent the last decade in IT roles learning how to find and fix
+                problems by supporting colleagues and users across many different applications—gaining a clear
+                understanding of how systems behave and where they tend to break.
+
+                My experience across different stages — setting up systems, handling incidents, working with CI/CD
+                pipelines, and even writing some unit tests — has deepened my ability to think critically about software
+                reliability and how to support it throughout the process.
+
+                Learning to use tools like Cypress and Postman came naturally to me during the QA Tester course, which
+                gave me confidence in both my testing skills and my ability to quickly learn any tools the role may
+                require.
+
+                I`m genuinely excited to grow in quality assurance and to bring both my curiosity and practical
+                experience into a role where I can make a real difference.
+            </p>
+        </div>
+    </section>
+
     <section id="skills" class="skills-section">
         <div class="container">
             <h2 class="section-title">Skills & Expertise</h2>
 
             <div class="skills-grid">
-                <!-- Technical Skills -->
                 <div class="skill-card">
                     <h3>Technical Skills</h3>
-                    <div class="tags">
-                        <span class="tag blue-tag">Python</span>
-                        <span class="tag blue-tag">C#</span>
-                        <span class="tag blue-tag">Customer Support</span>
-                        <span class="tag blue-tag">Problem Solving</span>
-                        <span class="tag blue-tag">QA Testing</span>
-                        <span class="tag blue-tag">Windows</span>
-                        <span class="tag blue-tag">Incident Management</span>
-                        <span class="tag blue-tag">Escalation Management</span>
-                        <span class="tag blue-tag">Application Support</span>
-                        <span class="tag blue-tag">Cypress</span>
-                        <span class="tag blue-tag">Security Risk Assessment</span>
-                        <span class="tag blue-tag">Agile Methodology</span>
-                        <span class="tag blue-tag">Postman</span>
-                        <span class="tag blue-tag">Server Management</span>
+                    <div class="tags" id="skills-tags">
+                        <!-- Populated via JS -->
                     </div>
                 </div>
 
-                <!-- Languages -->
                 <div class="skill-card">
                     <h3>Languages</h3>
                     <ul class="language-list">
@@ -100,7 +106,6 @@
                     </ul>
                 </div>
 
-                <!-- Interests -->
                 <div class="skill-card">
                     <h3>Interests</h3>
                     <div class="tags">
@@ -119,12 +124,10 @@
         </div>
     </section>
 
-    <!-- Experience Section -->
     <section id="experience" class="experience-section">
         <div class="container">
             <h2 class="section-title">Professional Experience</h2>
 
-            <!-- Search and filter UI -->
             <div class="search-container">
                 <div class="search-box">
                     <i class="fas fa-search search-icon"></i>
@@ -134,12 +137,10 @@
                 <div id="search-results-count" class="search-results-count"></div>
             </div>
 
-            <!-- Experience items -->
             <div id="experience-list" class="experience-list">
-                <!-- Experience items will be populated by JavaScript -->
+                <!-- Populated via JS -->
             </div>
 
-            <!-- No results message -->
             <div id="no-results" class="no-results hidden">
                 <p>No experience entries match your search.</p>
                 <button id="clear-search" class="btn primary-btn">Clear Search</button>
@@ -147,14 +148,12 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
     <section id="contact" class="contact-section">
         <div class="container">
             <h2 class="section-title">Get In Touch</h2>
 
             <div class="contact-container">
                 <div class="contact-grid">
-                    <!-- Contact Info -->
                     <div class="contact-info">
                         <h3>Contact Information</h3>
                         <div class="info-items">
@@ -171,13 +170,8 @@
                                 <p class="info-value">Vilnius, Lithuania</p>
                             </div>
                         </div>
-
-                        <p class="contact-message">
-                            Feel free to reach out for opportunities or just to say hello!
-                        </p>
                     </div>
 
-                    <!-- Contact Form -->
                     <div class="contact-form">
                         <h3>Send a Message</h3>
 
@@ -217,7 +211,6 @@
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-info">
@@ -235,99 +228,13 @@
                 </div>
 
                 <div class="footer-copyright">
-                    <p>&copy; <span id="current-year"></span> All rights reserved</p>
+                    <p>&copy; 2025 No rights reserved</p>
                     <p>Built with HTML, CSS and JavaScript</p>
                 </div>
             </div>
         </div>
     </footer>
 
-    <!-- CV Data (hidden, used by JavaScript) -->
-    <script id="cv-data" type="application/json">
-        {
-            "personal_info": {
-                "name": "Žilvinas Martišius",
-                "location": "Vilnius, Lithuania",
-                "phone": "+370 626 88279",
-                "email": "martisius.z@gmail.com"
-            },
-            "summary": "Self-driven and detail-oriented IT Specialist with over a decade of experience supporting complex financial systems, process optimization, and infrastructure monitoring in the banking sector. Adept at scripting, incident management, client communication, and cross-functional collaboration. Passionate about psychology, video games, and technology-driven solutions.",
-            "experience": [
-                {
-                    "date": "Oct 2024 – Apr 2025",
-                    "title": "Manual and Automated Software Testing Course",
-                    "company": "Bit.lt (Remote, Lithuania)",
-                    "description": "Completed a comprehensive 24-week QA training program covering manual and automated testing methodologies. Gained hands-on experience with Cypress for end-to-end testing and Postman for API testing. Managed test cases and defects using JIRA. Final project — CandyStore (https://github.com/Infrael/CandyStore) — involved building automated test suites to ensure full coverage of a web application's functionality and interface.",
-                    "tags": ["Manual Testing", "Automated Testing", "Cypress", "Postman", "JIRA", "Test Case Design", "Bug Tracking", "API Testing", "UI Testing", "GitHub", "GitHub Actions"]
-                },
-                {
-                    "date": "May 2020 – Aug 2024",
-                    "title": "FI & WSO IT Specialist",
-                    "company": "Danske Bank A/S Lithuania",
-                    "description": "Supported Fixed Income trading systems and Wall Street Office tools across multiple environments. Maintained in-house scripts (Python), managed servers, and participated in system stability monitoring. Contributed to code deployments by updating Docker containers and verifying production changes, including occasional unit testing. Logged and tracked technical issues through JIRA. Collaborated daily with developers, analysts, and stakeholders in agile scrum meetings to ensure timely resolution and smooth releases. Occasionally participated in on-call rotation for production systems.",
-                    "tags": ["Python", "C#", "Docker", "Fixed Income", "Server Management", "Process Improvement", "Scrum", "Application Support", "Unit Testing", "JIRA", "CI/CD", "Production Support", "Security Risk Assessment", "Financial Services"]
-                },
-                {
-                    "date": "Prior to May 2020",
-                    "title": "BARX Client Technical Services Analyst",
-                    "company": "Barclays Group Operations Limited",
-                    "description": "Delivered technical support to institutional clients across trading platforms involving Foreign Exchange, Fixed Income, and Structured Products. Handled onboarding, account configuration, and connectivity troubleshooting. Tracked issues and daily tasks using JIRA and ServiceNow, coordinated with developers for escalations, and occasionally contributed to internal software updates. Maintained SLA expectations and participated in post-incident reviews when required.",
-                    "tags": ["Technical Support", "Financial Products", "Client Onboarding", "ServiceNow", "JIRA", "Outlook", "Connectivity", "Trading Platforms", "Escalation Handling", "Incident Logging"]
-                },
-                {
-                    "date": "Prior to BARX role",
-                    "title": "Service Assurance Analyst",
-                    "company": "Barclays Group Operations Limited",
-                    "description": "Focused on the incident lifecycle by analyzing ServiceNow data to uncover patterns and improve operational processes. Created reports and presentations to communicate incident trends and SLA metrics using Excel and PowerPoint. Contributed to improving support workflows and standardizing reporting templates used for daily incident tracking. Helped maintain internal SOPs and supported the creation of knowledge base documentation.",
-                    "tags": ["Incident Management", "ServiceNow", "Excel", "Data Analysis", "Reporting", "SLA Metrics", "Process Optimization", "PowerPoint", "Team Collaboration"]
-                },
-                {
-                    "date": "Prior to Service Assurance role",
-                    "title": "Senior Support Analyst",
-                    "company": "Barclays Group Operations Limited",
-                    "description": "Handled high-priority escalations for business-critical incidents, ensuring timely coordination across departments and quick resolution paths. Acted as the main liaison between technical teams and stakeholders to maintain transparency during outages or major disruptions. Communication was primarily conducted via Outlook, phone, and internal ticketing systems.",
-                    "tags": ["Escalation Management", "Incident Handling", "Stakeholder Communication", "Business-Critical", "Outlook", "Cross-Team Coordination", "Client Impact"]
-                },
-                {
-                    "date": "Career start at Barclays",
-                    "title": "Telephony Support Analyst",
-                    "company": "Barclays Group Operations Limited",
-                    "description": "Started at Barclays as a first-line IT Support analyst for internal customers. Provided technical assistance via phone and email, focusing on incident resolution and system troubleshooting. As experience grew, took on business-critical escalations and became a trusted contact for urgent support needs.",
-                    "tags": ["IT Support", "Incident Troubleshooting", "Customer Service", "First Line Support", "Telephony", "Email Support", "Escalation Management"]
-                }
-            ],
-
-            "skills": [
-                "Python",
-                "C#",
-                "Tech Support",
-                "Problem Solving",
-                "MS Office",
-                "Windows",
-                "Incident Management",
-                "Process Improvement",
-                "Server Management",
-                "Application Support",
-                "Documentation Management",
-                "Security Risk Assessment"
-            ],
-            "languages": [
-                "Lithuanian - C2 (Mother Tongue)",
-                "English - C2 (Business fluent)",
-                "Russian - B1 (Intermediate)",
-                "German - A1 (Beginner)"
-            ],
-            "interests": [
-                "Movies",
-                "Games",
-                "Snowboarding",
-                "Psychology"
-            ]
-        }
-    </script>
-
-    <!-- JavaScript -->
-    <script src="js/main.js"></script>
 </body>
 
 </html>

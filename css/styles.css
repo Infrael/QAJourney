@@ -1,9 +1,3 @@
-/* 
- * Main Stylesheet for Žilvinas Martišius Portfolio
- * Author: Manus AI
- * Date: April 2025
- */
-
 /* ===== VARIABLES ===== */
 :root {
   --primary-color: #3b82f6;
@@ -260,6 +254,16 @@ p {
   gap: 1rem;
   max-width: 400px;
   margin: 0 auto;
+}
+
+/* ===== Motivation SECTION ===== */
+.motivation-section .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 /* ===== SKILLS SECTION ===== */
