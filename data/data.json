@@ -5,8 +5,22 @@
         "phone": "+370 626 88279",
         "email": "martisius.z@gmail.com"
     },
-    "summary": "Self-driven and detail-oriented IT Specialist with over a decade of experience supporting complex financial systems, process optimization, and infrastructure monitoring in the banking sector. Adept at scripting, incident management, client communication, and cross-functional collaboration. Passionate about psychology, video games, and technology-driven solutions.",
+    "summary": "Quality oriented IT Specialist with over a decade of experience supporting complex financial systems. Experienced in cross-functional collaboration, client communication, process optimization, incident management, scripting, documentation.",
     "experience": [
+        {
+            "date": "Aug 2025 – Present",
+            "title": "Quality Assurance Engineer",
+            "company": "Teltonika",
+            "description": "Performed manual tests for IoT devices. Maintained and improved test case design/execution steps. Investigated system behavior, reproduced issues, and reported bugs. Used Jira and Zephyr for test management, execution, and bug tracking.",
+            "tags": [
+                "IoT",
+                "Manual Testing",
+                "Test Case Design",
+                "Bug Tracking",
+                "Zephyr",
+                "Jira"
+            ]
+        },
         {
             "date": "Oct 2024 – Apr 2025",
             "title": "Manual and Automated Software Testing Course",
